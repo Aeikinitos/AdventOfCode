@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day4/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInput" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputInvalid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputValid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/adventofcode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/adventofcode.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="247">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -33,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="218">
+              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,27 +50,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day2/PasswordPhilosophyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="53" column="99" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-93">
+              <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-                <element signature="e#1465#1466#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1713#1714#0" expanded="true" />
+                <element signature="e#4121#4122#0" expanded="true" />
+                <element signature="e#4163#4164#0" expanded="true" />
+                <element signature="e#4330#4331#0" expanded="true" />
+                <element signature="e#4370#4371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="1120" column="28" selection-start-line="1120" selection-start-column="28" selection-end-line="1120" selection-end-column="28" />
+            <state>
+              <caret selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -81,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+            <state relative-caret-position="1454">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,6 +110,11 @@
       <find>eyr:2024 pid:662406624 hcl:#cfa07d byr:1947 iyr:2015 ecl:amb hgt:150cm</find>
       <find>pid:391011205</find>
       <find>f59bc7</find>
+      <find>860033327</find>
+      <find>println</find>
+      <find>15115163</find>
+      <find>gmt</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -135,13 +138,15 @@
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day1/ReportRepair.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day2/input" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day2/PasswordPhilosophyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day3/input" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day3/TobogganTrajectoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day3/TobogganTrajectory.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInput" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day4/input" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputInvalid" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputValid" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java" />
       </list>
@@ -196,34 +201,6 @@
               <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventofcode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventofcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-              <item name="PasswordPhilosophy.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventofcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventofcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -240,15 +217,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventofcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventofcode" type="b2602c69:ProjectViewProjectNode" />
@@ -320,6 +288,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -368,23 +337,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassportProcessingTest.exercisePart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventofcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day4.PassportProcessingTest" />
-      <option name="METHOD_NAME" value="exercisePart1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PassportProcessingTest.exercisePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode" />
       <extension name="coverage">
@@ -402,7 +354,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassportProcessingTest.testPassport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PassportProcessingTest.testPassportPart2_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode" />
       <extension name="coverage">
         <pattern>
@@ -412,14 +364,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="advent2020.day4" />
       <option name="MAIN_CLASS_NAME" value="advent2020.day4.PassportProcessingTest" />
-      <option name="METHOD_NAME" value="testPassport" />
+      <option name="METHOD_NAME" value="testPassportPart2_1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassportProcessingTest.testPassport2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PassportProcessingTest.testPassportsListPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode" />
       <extension name="coverage">
         <pattern>
@@ -429,14 +381,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="advent2020.day4" />
       <option name="MAIN_CLASS_NAME" value="advent2020.day4.PassportProcessingTest" />
-      <option name="METHOD_NAME" value="testPassport2" />
+      <option name="METHOD_NAME" value="testPassportsListPart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PassportProcessingTest.testPassportsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PassportProcessingTest.testPassportsListPart2SampleInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventofcode" />
       <extension name="coverage">
         <pattern>
@@ -446,7 +398,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="advent2020.day4" />
       <option name="MAIN_CLASS_NAME" value="advent2020.day4.PassportProcessingTest" />
-      <option name="METHOD_NAME" value="testPassportsList" />
+      <option name="METHOD_NAME" value="testPassportsListPart2SampleInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PassportProcessingTest.testPassportsListPart2SampleValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day4" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day4.PassportProcessingTest" />
+      <option name="METHOD_NAME" value="testPassportsListPart2SampleValid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -481,10 +450,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PassportProcessingTest.exercisePart2" />
-        <item itemvalue="JUnit.PassportProcessingTest.exercisePart1" />
-        <item itemvalue="JUnit.PassportProcessingTest.testPassport2" />
-        <item itemvalue="JUnit.PassportProcessingTest.testPassportsList" />
-        <item itemvalue="JUnit.PassportProcessingTest.testPassport" />
+        <item itemvalue="JUnit.PassportProcessingTest.testPassportPart2_1" />
+        <item itemvalue="JUnit.PassportProcessingTest.testPassportsListPart2SampleInvalid" />
+        <item itemvalue="JUnit.PassportProcessingTest.testPassportsListPart2SampleValid" />
+        <item itemvalue="JUnit.PassportProcessingTest.testPassportsListPart2" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +469,7 @@
       <updated>1606736478233</updated>
       <workItem from="1606736484737" duration="333000" />
       <workItem from="1606736854580" duration="6605000" />
-      <workItem from="1606807765247" duration="26432000" />
+      <workItem from="1606807765247" duration="36467000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -516,43 +485,50 @@
       <option name="project" value="LOCAL" />
       <updated>1606985912804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020.day4.part1">
+      <created>1607070294056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607070294056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 14m 16s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportsListPart2SampleValid - 2020.12.04 at 12h 56m 25s.xml">
+      <configuration name="PassportProcessingTest.testPassportsListPart2SampleValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 14m 23s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportsListPart2SampleInvalid - 2020.12.04 at 12h 56m 28s.xml">
+      <configuration name="PassportProcessingTest.testPassportsListPart2SampleInvalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 14m 39s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 12h 57m 19s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 14m 48s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 12h 57m 41s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 15m 03s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 12h 58m 03s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 15m 26s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 13h 00m 58s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 16m 41s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 13h 01m 05s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 18m 21s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 13h 03m 22s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart1 - 2020.12.04 at 10h 23m 42s.xml">
-      <configuration name="PassportProcessingTest.exercisePart1" configurationId="JUnit" />
+    <history-entry file="PassportProcessingTest_testPassportPart2_1 - 2020.12.04 at 13h 03m 29s.xml">
+      <configuration name="PassportProcessingTest.testPassportPart2_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PassportProcessingTest_exercisePart2 - 2020.12.04 at 10h 24m 09s.xml">
+    <history-entry file="PassportProcessingTest_exercisePart2 - 2020.12.04 at 13h 03m 40s.xml">
       <configuration name="PassportProcessingTest.exercisePart2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33370000" />
+    <option name="totallyTimeSpent" value="43405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,8 +552,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -604,57 +580,80 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.day2" />
     <MESSAGE value="2020.day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day3" />
+    <MESSAGE value="2020.day4.part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day4.part1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2019/day1/FuelCounterUpper.java</url>
           <line>37</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2019/day1/FuelCounterUpper.java</url>
           <line>43</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="26" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>imported.equals(&quot;&quot;)</expression-string>
+        <expression-string>Pattern.compile(&quot;^\\d{9}$&quot;).matcher(input).find()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>imported</expression-string>
+        <expression-string>Pattern.compile(&quot;\\d{9}&quot;).matcher(&quot;11123456789&quot;).find()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>imported == &quot;&quot;</expression-string>
+        <expression-string>Pattern.compile(&quot;\\d{9}&quot;).matcher(&quot;1123456789&quot;).find()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pos+movement</expression-string>
+        <expression-string>Pattern.compile(&quot;\\d{9}&quot;).matcher(&quot;0123456789&quot;).find()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>map.charAt(pos+movement)</expression-string>
+        <expression-string>Pattern.compile(&quot;\\d{9}&quot;).matcher(input).find()</expression-string>
         <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matcher.group(&quot;height&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matcher.find()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Splitter.onPattern(&quot;\\s+&quot;).withKeyValueSeparator(&quot;:&quot;)
+                            .split(passport.replaceAll(&quot;\\\\n&quot;, &quot; &quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Splitter.onPattern(&quot;\\s+&quot;).withKeyValueSeparator(&quot;:&quot;)
+                            .split(&quot;byr:1921 iyr:2014&quot;.replaceAll(&quot;\\\\n&quot;, &quot; &quot;)).entrySet().stream()
+                            .collect(Collectors.toList())</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
@@ -776,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day1/ReportRepairTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -790,6 +782,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day2/PasswordPhilosophyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="53" column="99" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="99" />
         </state>
       </provider>
     </entry>
@@ -805,7 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day3/TobogganTrajectory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="119">
           <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -813,57 +812,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputInvalid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInputValid">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="31" />
+          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="430" column="13" lean-forward="true" selection-start-line="430" selection-start-column="13" selection-end-line="430" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="381" selection-start-line="381" selection-end-line="381" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="600" selection-start-line="600" selection-end-line="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/sampleInput">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day2/PasswordPhilosophyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="53" column="99" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day4/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="1120" column="28" selection-start-line="1120" selection-start-column="28" selection-end-line="1120" selection-end-column="28" />
+        <state>
+          <caret selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="-93">
+          <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#4121#4122#0" expanded="true" />
+            <element signature="e#4163#4164#0" expanded="true" />
+            <element signature="e#4330#4331#0" expanded="true" />
+            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day4/PassportProcessingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="1454">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
