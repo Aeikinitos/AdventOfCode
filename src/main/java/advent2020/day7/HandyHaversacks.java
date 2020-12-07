@@ -1,8 +1,5 @@
 package advent2020.day7;
 
-import lombok.Data;
-import lombok.NonNull;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
