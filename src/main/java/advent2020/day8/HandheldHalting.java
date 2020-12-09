@@ -69,6 +69,55 @@ public class HandheldHalting {
     }
 
 
+    public void undo(){
+
+    }
+
+    public int fixExecution(){
+
+        // do
+        // find last instruction that is jmp or nop
+        // undo it
+        // switch it
+        // run from history with new set of rules.
+
+        // while exit==-1 find next jmp/nop command from the history and repeat
+
+
+        // for all executed instructions
+        for (int historicalInstructionPointer : instructionsHistory) {
+            Instruction instruction = getInstruction(historicalInstructionPointer).get();
+            // if they are jmp/nop
+            if(Command.jmp.equals(instruction.getCommand()) || Command.nop.equals(instruction.getCommand())){
+
+            }
+        }
+
+        // switch them
+        // run from that point
+        // if exitStatus==0 exit
+
+        instructionsHistory.forEach(historicalPointer ->
+        {
+            Instruction instruction = getInstruction(historicalPointer).get();
+
+        });
+
+        return 0;
+    }
+
+    private int findLastInstructionWithJMPNOP(){
+        for (int historicalInstructionPointer : instructionsHistory) {
+            Instruction instruction = getInstruction(historicalInstructionPointer).get();
+            if(Command.jmp.equals(instruction.getCommand()) || Command.nop.equals(instruction.getCommand())){
+
+            }
+        }
+
+        return -1;
+
+    }
+
     private void adjustAccumulator(int argument){
         this.accumulator += argument;
     }
