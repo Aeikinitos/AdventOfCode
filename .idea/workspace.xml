@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day8/InstructionFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day9/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,85 +23,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2782#2783#0" expanded="true" />
-                <element signature="e#2826#2827#0" expanded="true" />
-                <element signature="e#2884#2885#0" expanded="true" />
-                <element signature="e#2935#2936#0" expanded="true" />
-                <element signature="e#3274#3275#0" expanded="true" />
-                <element signature="e#3333#3334#0" expanded="true" />
-                <element signature="e#3395#3396#0" expanded="true" />
-                <element signature="e#3466#3467#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/Instruction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/InstructionFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
-              <folding>
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
-                <element signature="e#1464#1465#0" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1719#1720#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="366">
+              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="161" column="55" lean-forward="true" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="418">
+              <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day9/input">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -114,8 +57,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -142,9 +85,12 @@
       <find>stream</find>
       <find>dotted black</find>
       <find>executeAndFixInstructions</find>
+      <find>guava</find>
+      <find>,</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
+      <replace>L,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -197,6 +143,9 @@
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting2.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day9/input" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" />
       </list>
     </option>
   </component>
@@ -260,6 +209,15 @@
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,7 +242,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day8" type="462c0819:PsiDirectoryNode" />
+              <item name="day9" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,11 +270,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day9" />
       <recent name="advent2020.day8" />
       <recent name="advent2020.day7" />
       <recent name="advent2020.day6" />
       <recent name="advent2020.day5" />
-      <recent name="advent2020.day4" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -347,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HandheldHaltingTest">
+  <component name="RunManager" selected="JUnit.EncodingErrorTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -360,84 +318,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandheldHaltingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingErrorTest.iterateUntilNotValidated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day8.*" />
+          <option name="PATTERN" value="advent2020.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day8" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day8.HandheldHaltingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HandheldHaltingTest.executeAndFixInstructionsWithInstructionFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day8" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day8.HandheldHaltingTest" />
-      <option name="METHOD_NAME" value="executeAndFixInstructionsWithInstructionFunction" />
+      <option name="PACKAGE_NAME" value="advent2020.day9" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="METHOD_NAME" value="iterateUntilNotValidated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandheldHaltingTest.executeInstructionsWithInstructionFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingErrorTest.iterateUntilNotValidated2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day8.*" />
+          <option name="PATTERN" value="advent2020.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day8" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day8.HandheldHaltingTest" />
-      <option name="METHOD_NAME" value="executeInstructionsWithInstructionFunction" />
+      <option name="PACKAGE_NAME" value="advent2020.day9" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="METHOD_NAME" value="iterateUntilNotValidated2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandheldHaltingTest.part1WithInstructionFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingErrorTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day8.*" />
+          <option name="PATTERN" value="advent2020.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day8" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day8.HandheldHaltingTest" />
-      <option name="METHOD_NAME" value="part1WithInstructionFunction" />
+      <option name="PACKAGE_NAME" value="advent2020.day9" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="METHOD_NAME" value="part1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandheldHaltingTest.part2WithInstructionFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingErrorTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day8.*" />
+          <option name="PATTERN" value="advent2020.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day8" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day8.HandheldHaltingTest" />
-      <option name="METHOD_NAME" value="part2WithInstructionFunction" />
+      <option name="PACKAGE_NAME" value="advent2020.day9" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day9" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="METHOD_NAME" value="sumOfSmallAndLargeInContiguousSet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -471,11 +430,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HandheldHaltingTest" />
-        <item itemvalue="JUnit.HandheldHaltingTest.part2WithInstructionFunction" />
-        <item itemvalue="JUnit.HandheldHaltingTest.part1WithInstructionFunction" />
-        <item itemvalue="JUnit.HandheldHaltingTest.executeAndFixInstructionsWithInstructionFunction" />
-        <item itemvalue="JUnit.HandheldHaltingTest.executeInstructionsWithInstructionFunction" />
+        <item itemvalue="JUnit.EncodingErrorTest.part2" />
+        <item itemvalue="JUnit.EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" />
+        <item itemvalue="JUnit.EncodingErrorTest.part1" />
+        <item itemvalue="JUnit.EncodingErrorTest.iterateUntilNotValidated2" />
+        <item itemvalue="JUnit.EncodingErrorTest.iterateUntilNotValidated" />
       </list>
     </recent_temporary>
   </component>
@@ -495,7 +454,7 @@
       <workItem from="1607250638701" duration="17409000" />
       <workItem from="1607354628307" duration="2755000" />
       <workItem from="1607417661972" duration="720000" />
-      <workItem from="1607418396944" duration="23887000" />
+      <workItem from="1607418396944" duration="33544000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -546,43 +505,50 @@
       <option name="project" value="LOCAL" />
       <updated>1607426369501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2020.day8.part2">
+      <created>1607496580116</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607496580116</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HandheldHaltingTest_executeAndFixInstructionsWithInstructionFunction - 2020.12.09 at 08h 30m 15s.xml">
-      <configuration name="HandheldHaltingTest.executeAndFixInstructionsWithInstructionFunction" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 16m 51s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest_executeAndFixInstructionsWithInstructionFunction - 2020.12.09 at 08h 35m 25s.xml">
-      <configuration name="HandheldHaltingTest.executeAndFixInstructionsWithInstructionFunction" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_sumOfSmallAndLargeInContiguousSet - 2020.12.09 at 11h 20m 26s.xml">
+      <configuration name="EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest_executeAndFixInstructionsWithInstructionFunction - 2020.12.09 at 08h 37m 37s.xml">
-      <configuration name="HandheldHaltingTest.executeAndFixInstructionsWithInstructionFunction" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 20m 31s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest_part1WithInstructionFunction - 2020.12.09 at 08h 41m 24s.xml">
-      <configuration name="HandheldHaltingTest.part1WithInstructionFunction" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 21m 39s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest - 2020.12.09 at 08h 41m 31s.xml">
-      <configuration name="HandheldHaltingTest" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 31m 56s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest - 2020.12.09 at 08h 41m 50s.xml">
-      <configuration name="HandheldHaltingTest" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 31m 59s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest - 2020.12.09 at 08h 42m 05s.xml">
-      <configuration name="HandheldHaltingTest" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 34m 51s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest_part2WithInstructionFunction - 2020.12.09 at 08h 42m 19s.xml">
-      <configuration name="HandheldHaltingTest.part2WithInstructionFunction" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 37m 36s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest - 2020.12.09 at 08h 46m 33s.xml">
-      <configuration name="HandheldHaltingTest" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 37m 39s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandheldHaltingTest - 2020.12.09 at 08h 48m 09s.xml">
-      <configuration name="HandheldHaltingTest" configurationId="JUnit" />
+    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 38m 15s.xml">
+      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89502000" />
+    <option name="totallyTimeSpent" value="99159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,7 +606,8 @@
     <MESSAGE value="2020.day5" />
     <MESSAGE value="2020.day6" />
     <MESSAGE value="2020.day8.part1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day8.part1" />
+    <MESSAGE value="2020.day8.part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day8.part2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,15 +648,62 @@
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="26" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="list.get(j)" language="JAVA" />
+        <watch expression="list.get(i)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>indexOfSum</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.subList(startIndex,endIndex+1).stream().reduce(Long::sum);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.subList(startIndex,endIndex).stream().reduce(Long::sum);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.get(startIndex)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>20874512L == targetSum</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>targetSum</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.get(5)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>innerBagRules.stream()
                                       .map(innerBagRule -&gt; innerBagRule.getCount()
@@ -711,92 +725,63 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="breakpointCondition">
       <expression>
-        <expression-string>rules.get(&quot;faded yellow&quot;);</expression-string>
+        <expression-string>startIndex==125</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>partitioning.getChars(7,10, seatPart,0);
-seatPart;</expression-string>
+        <expression-string>i==125</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>partitioning.getChars(6,9, seatPart,0);
-seatPart;</expression-string>
+        <expression-string>i&gt;=400</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>partitioning.getChars(6,9, seatPart,0);</expression-string>
+        <expression-string>i==400</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Pattern.compile(&quot;^\\d{9}$&quot;).matcher(input).find()</expression-string>
+        <expression-string>j &gt;= 450</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Pattern.compile(&quot;\\d{9}&quot;).matcher(&quot;11123456789&quot;).find()</expression-string>
+        <expression-string>j != 450</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j != 407</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j != 406</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>list.get(i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.get(j)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day1/ReportRepair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-875">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day2/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="990" column="19" lean-forward="true" selection-start-line="990" selection-start-column="19" selection-end-line="990" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2019/day1/FuelCounterUpperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="98" column="59" lean-forward="true" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2019/day1/FuelCounterUpper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day3/input">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -1170,20 +1155,62 @@ seatPart;</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/ArrayDeque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="161" column="55" lean-forward="true" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
+        <state relative-caret-position="111">
+          <caret line="150" column="92" selection-start-line="150" selection-start-column="50" selection-end-line="150" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="3723">
+          <caret line="321" column="9" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day9/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
         </state>
       </provider>
     </entry>
