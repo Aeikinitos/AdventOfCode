@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day9/input" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2020.day10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day10/AdapterArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day10/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +24,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="-484">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day10/AdapterArrayTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -35,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+            <state relative-caret-position="162">
+              <caret line="45" column="140" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -44,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day9/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
+            <state relative-caret-position="16983">
               <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
             </state>
           </provider>
@@ -145,13 +162,16 @@
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day9/input" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day10/input" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day10/AdapterArrayTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -161,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,6 +236,15 @@
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,10 +271,21 @@
               <item name="advent2020" type="462c0819:PsiDirectoryNode" />
               <item name="day9" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day10" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,27 +308,28 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day10" />
       <recent name="advent2020.day9" />
       <recent name="advent2020.day8" />
       <recent name="advent2020.day7" />
       <recent name="advent2020.day6" />
-      <recent name="advent2020.day5" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="advent2020.day8" />
       <recent name="advent2020.day7" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\adventofcode\src\test" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day8" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\adventofcode\src\test" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
+      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -305,7 +344,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EncodingErrorTest.part2">
+  <component name="RunManager" selected="JUnit.AdapterArrayTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -318,50 +357,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncodingErrorTest.iterateUntilNotValidated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdapterArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day9.*" />
+          <option name="PATTERN" value="advent2020.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day9" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
-      <option name="METHOD_NAME" value="iterateUntilNotValidated" />
+      <option name="PACKAGE_NAME" value="advent2020.day10" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day10.AdapterArrayTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdapterArrayTest.combination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day10" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day10.AdapterArrayTest" />
+      <option name="METHOD_NAME" value="combination" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncodingErrorTest.iterateUntilNotValidated2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdapterArrayTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day9.*" />
+          <option name="PATTERN" value="advent2020.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day9" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
-      <option name="METHOD_NAME" value="iterateUntilNotValidated2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EncodingErrorTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day9" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="PACKAGE_NAME" value="advent2020.day10" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day10.AdapterArrayTest" />
       <option name="METHOD_NAME" value="part1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -369,16 +407,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncodingErrorTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdapterArrayTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day9.*" />
+          <option name="PATTERN" value="advent2020.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day9" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
+      <option name="PACKAGE_NAME" value="advent2020.day10" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day10.AdapterArrayTest" />
       <option name="METHOD_NAME" value="part2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -386,17 +424,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdapterArrayTest.product" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day9.*" />
+          <option name="PATTERN" value="advent2020.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day9" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day9.EncodingErrorTest" />
-      <option name="METHOD_NAME" value="sumOfSmallAndLargeInContiguousSet" />
+      <option name="PACKAGE_NAME" value="advent2020.day10" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day10.AdapterArrayTest" />
+      <option name="METHOD_NAME" value="product" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -430,11 +468,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EncodingErrorTest.part2" />
-        <item itemvalue="JUnit.EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" />
-        <item itemvalue="JUnit.EncodingErrorTest.part1" />
-        <item itemvalue="JUnit.EncodingErrorTest.iterateUntilNotValidated2" />
-        <item itemvalue="JUnit.EncodingErrorTest.iterateUntilNotValidated" />
+        <item itemvalue="JUnit.AdapterArrayTest" />
+        <item itemvalue="JUnit.AdapterArrayTest.part2" />
+        <item itemvalue="JUnit.AdapterArrayTest.part1" />
+        <item itemvalue="JUnit.AdapterArrayTest.combination" />
+        <item itemvalue="JUnit.AdapterArrayTest.product" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +492,10 @@
       <workItem from="1607250638701" duration="17409000" />
       <workItem from="1607354628307" duration="2755000" />
       <workItem from="1607417661972" duration="720000" />
-      <workItem from="1607418396944" duration="33544000" />
+      <workItem from="1607418396944" duration="34851000" />
+      <workItem from="1607521032189" duration="790000" />
+      <workItem from="1607527621455" duration="14000" />
+      <workItem from="1607580737969" duration="1599000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -512,43 +553,50 @@
       <option name="project" value="LOCAL" />
       <updated>1607496580116</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2020.day9">
+      <created>1607506724429</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607506724429</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 16m 51s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_product - 2020.12.10 at 08h 25m 34s.xml">
+      <configuration name="AdapterArrayTest.product" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_sumOfSmallAndLargeInContiguousSet - 2020.12.09 at 11h 20m 26s.xml">
-      <configuration name="EncodingErrorTest.sumOfSmallAndLargeInContiguousSet" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_combination - 2020.12.10 at 08h 30m 30s.xml">
+      <configuration name="AdapterArrayTest.combination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 20m 31s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_combination - 2020.12.10 at 08h 31m 44s.xml">
+      <configuration name="AdapterArrayTest.combination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 21m 39s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_combination - 2020.12.10 at 08h 32m 31s.xml">
+      <configuration name="AdapterArrayTest.combination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 31m 56s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_part1 - 2020.12.10 at 08h 34m 16s.xml">
+      <configuration name="AdapterArrayTest.part1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 31m 59s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest - 2020.12.10 at 08h 34m 30s.xml">
+      <configuration name="AdapterArrayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 34m 51s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_part1 - 2020.12.10 at 08h 35m 48s.xml">
+      <configuration name="AdapterArrayTest.part1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 37m 36s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_part1 - 2020.12.10 at 08h 36m 12s.xml">
+      <configuration name="AdapterArrayTest.part1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 37m 39s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest_part2 - 2020.12.10 at 08h 36m 59s.xml">
+      <configuration name="AdapterArrayTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EncodingErrorTest_part2 - 2020.12.09 at 11h 38m 15s.xml">
-      <configuration name="EncodingErrorTest.part2" configurationId="JUnit" />
+    <history-entry file="AdapterArrayTest - 2020.12.10 at 08h 38m 37s.xml">
+      <configuration name="AdapterArrayTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99159000" />
+    <option name="totallyTimeSpent" value="102869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,7 +611,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -607,7 +655,8 @@
     <MESSAGE value="2020.day6" />
     <MESSAGE value="2020.day8.part1" />
     <MESSAGE value="2020.day8.part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day8.part2" />
+    <MESSAGE value="2020.day9" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,9 +699,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java</url>
-          <line>58</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day10/AdapterArrayTest.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NumberFormatException" package="java.lang" />
@@ -782,30 +843,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day3/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="322" column="31" selection-start-line="322" selection-start-column="31" selection-end-line="322" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day1/ReportRepairTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="97" column="5" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="97" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day2/PasswordPhilosophyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="53" column="99" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day3/TobogganTrajectoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -1071,20 +1108,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/OrderedInstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2253">
-          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="149" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/OrderedInstruction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithHistory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/Instruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1195,22 +1220,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day9/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
+        <state relative-caret-position="16983">
           <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        <state relative-caret-position="162">
+          <caret line="45" column="140" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day10/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state relative-caret-position="-484">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day10/AdapterArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
         </state>
       </provider>
     </entry>
