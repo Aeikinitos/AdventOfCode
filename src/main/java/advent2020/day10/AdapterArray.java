@@ -1,7 +1,9 @@
 package advent2020.day10;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -37,19 +39,45 @@ public class AdapterArray {
             if(differences.get(i).equals(1)){
                 countOfStraightOnes++;
             } else {
-                if(countOfStraightOnes == 4){
-                    product *= 7;
-                }
-                if(countOfStraightOnes == 3){
-                    product *= 4;
-                }
-                if(countOfStraightOnes == 2){
-                    product *= 2;
-                }
+                // only calculate straight ones since once you find a diff of 3 any combination breaks
+                product *= calculateProductCoefficient(countOfStraightOnes);
                 countOfStraightOnes = 0;
             }
         }
 
         return product;
+    }
+
+
+    private static Map<Integer, Integer> alreadyCalculated = new HashMap<>();
+    /*
+        the first 3 are calculated on paper
+        the following combinations will follow the pattern:
+        remove the previous number and repeat the pattern as if countOfStraightOnes-1
+        remove the last two numbers and repeat the pattern as if countOfStraightOnes-2
+        plus the combinations of all numbers till this point
+     */
+    private static int calculateProductCoefficient(int countOfStraightOnes){
+        if(countOfStraightOnes<=1){
+            return 1;
+        }
+        Integer calculatedResult = alreadyCalculated.get(countOfStraightOnes);
+        if(calculatedResult != null){
+            return calculatedResult;
+        }
+        if(countOfStraightOnes == 2){
+            return 2;
+        }
+        if(countOfStraightOnes == 3){
+            return 4;
+        }
+        if(countOfStraightOnes == 4){
+            return 7;
+        }
+        calculatedResult = calculateProductCoefficient(countOfStraightOnes - 1)
+                        + calculateProductCoefficient(countOfStraightOnes - 2)
+                        + calculateProductCoefficient(countOfStraightOnes - 3);
+        alreadyCalculated.put(countOfStraightOnes, calculatedResult);
+        return calculatedResult;
     }
 }

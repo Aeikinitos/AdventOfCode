@@ -56,6 +56,15 @@ class AdapterArrayTest {
         System.out.println("Part2 = " + product);
     }
 
+    @Test
+    void allOnes() {
+        List<Integer> input = Arrays.asList(1, 2, 3, 4, 5,6,7);
+        List<Integer> differences = AdapterArray.differences(input);
+        long product = AdapterArray.combination(differences);
+        Assertions.assertEquals(44, product);
+    }
+
+
     /* *************************************** */
 
     protected List<String> readLines(String filename){
