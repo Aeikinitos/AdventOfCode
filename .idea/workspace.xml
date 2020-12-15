@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day14/input" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2020.day15">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,11 +22,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+            <state relative-caret-position="697">
+              <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,10 +47,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="250" column="59" lean-forward="true" selection-start-line="250" selection-start-column="59" selection-end-line="250" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="1547">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
@@ -56,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="160" column="122" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="122" />
+            <state relative-caret-position="111">
+              <caret line="174" column="3" lean-forward="true" selection-start-line="174" selection-start-column="3" selection-end-line="193" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lice</find>
       <find>map</find>
       <find>\n&quot; +</find>
       <find>eyr:2024 pid:662406624 hcl:#cfa07d byr:1947 iyr:2015 ecl:amb hgt:150cm</find>
@@ -110,6 +129,7 @@
       <find>mem[00000001]</find>
       <find>Rege</find>
       <find>11110100010101111011001X0100XX00100X</find>
+      <find>436</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -125,9 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/advent2020/day5/BinaryBoardingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day6/input" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day6/CustomCustoms.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day6/CustomCustomsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day5/BinaryBoarding.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day7/input" />
@@ -176,6 +193,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day14/input" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day15/input" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java" />
       </list>
     </option>
   </component>
@@ -190,8 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,6 +256,15 @@
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day15" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,6 +295,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,14 +319,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day15" />
       <recent name="advent2020.day14" />
       <recent name="advent2020.day13" />
       <recent name="advent2020.day12" />
       <recent name="advent2020" />
-      <recent name="advent2020.day10" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
+      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="advent2020.day12" />
@@ -305,17 +338,13 @@
       <recent name="advent2020.day8" />
       <recent name="advent2020.day7" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\adventofcode\src\test" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day12" />
       <recent name="advent2020.day11" />
       <recent name="advent2020.day8" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
-      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\adventofcode\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -330,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DockingDataTest.part2">
+  <component name="RunManager" selected="JUnit.RambunctiousRecitationTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -343,85 +372,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DockingDataTest.applyAssignmentSample3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RambunctiousRecitationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day14.*" />
+          <option name="PATTERN" value="advent2020.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day14" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day14.DockingDataTest" />
-      <option name="METHOD_NAME" value="applyAssignmentSample3" />
+      <option name="PACKAGE_NAME" value="advent2020.day15" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RambunctiousRecitationTest.nextNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day15" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
+      <option name="METHOD_NAME" value="nextNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DockingDataTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RambunctiousRecitationTest.nextNumberSample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day14.*" />
+          <option name="PATTERN" value="advent2020.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day14" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day14.DockingDataTest" />
-      <option name="METHOD_NAME" value="part1" />
+      <option name="PACKAGE_NAME" value="advent2020.day15" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
+      <option name="METHOD_NAME" value="nextNumberSample1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DockingDataTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RambunctiousRecitationTest.nextNumberSample2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day14.*" />
+          <option name="PATTERN" value="advent2020.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day14" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day14.DockingDataTest" />
+      <option name="PACKAGE_NAME" value="advent2020.day15" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
+      <option name="METHOD_NAME" value="nextNumberSample2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RambunctiousRecitationTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day15" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
       <option name="METHOD_NAME" value="part2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DockingDataTest.processInputSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day14" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day14.DockingDataTest" />
-      <option name="METHOD_NAME" value="processInputSample" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DockingDataTest.processInputSampleV2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day14" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day14.DockingDataTest" />
-      <option name="METHOD_NAME" value="processInputSampleV2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -455,11 +483,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DockingDataTest.part2" />
-        <item itemvalue="JUnit.DockingDataTest.processInputSampleV2" />
-        <item itemvalue="JUnit.DockingDataTest.processInputSample" />
-        <item itemvalue="JUnit.DockingDataTest.part1" />
-        <item itemvalue="JUnit.DockingDataTest.applyAssignmentSample3" />
+        <item itemvalue="JUnit.RambunctiousRecitationTest.part2" />
+        <item itemvalue="JUnit.RambunctiousRecitationTest" />
+        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumberSample2" />
+        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumberSample1" />
+        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +512,8 @@
       <workItem from="1607527621455" duration="14000" />
       <workItem from="1607580737969" duration="1866000" />
       <workItem from="1607582622718" duration="12774000" />
-      <workItem from="1607672102080" duration="43152000" />
+      <workItem from="1607672102080" duration="43849000" />
+      <workItem from="1608017581700" duration="2466000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -584,43 +613,50 @@
       <option name="project" value="LOCAL" />
       <updated>1607943599349</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2020.day14">
+      <created>1607980269638</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607980269638</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DockingDataTest_part1 - 2020.12.14 at 22h 33m 05s.xml">
-      <configuration name="DockingDataTest.part1" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 51m 32s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSample - 2020.12.14 at 22h 54m 01s.xml">
-      <configuration name="DockingDataTest.processInputSample" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 53m 20s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSample - 2020.12.14 at 22h 58m 55s.xml">
-      <configuration name="DockingDataTest.processInputSample" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 53m 54s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 00m 13s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 57m 15s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 01m 12s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 57m 41s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 04m 04s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 58m 02s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 04m 35s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_nextNumberSample2 - 2020.12.15 at 09h 58m 36s.xml">
+      <configuration name="RambunctiousRecitationTest.nextNumberSample2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 08m 46s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest - 2020.12.15 at 10h 00m 39s.xml">
+      <configuration name="RambunctiousRecitationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_processInputSampleV2 - 2020.12.14 at 23h 08m 56s.xml">
-      <configuration name="DockingDataTest.processInputSampleV2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest - 2020.12.15 at 10h 18m 25s.xml">
+      <configuration name="RambunctiousRecitationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DockingDataTest_part2 - 2020.12.14 at 23h 09m 09s.xml">
-      <configuration name="DockingDataTest.part2" configurationId="JUnit" />
+    <history-entry file="RambunctiousRecitationTest_part2 - 2020.12.15 at 10h 18m 37s.xml">
+      <configuration name="RambunctiousRecitationTest.part2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159062000" />
+    <option name="totallyTimeSpent" value="162225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,7 +671,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -643,8 +679,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -656,7 +692,6 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -666,6 +701,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,7 +722,8 @@
     <MESSAGE value="2020.day11" />
     <MESSAGE value="2020.day12" />
     <MESSAGE value="2020.day13" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day13" />
+    <MESSAGE value="2020.day14" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -725,7 +762,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2020/day13/ShuttleSearch.java</url>
-          <line>85</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
@@ -890,26 +927,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day5/BinaryBoardingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="49" column="81" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding>
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/OrderedInstruction.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithHistory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/Instruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1216,16 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="160" column="122" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="122" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/org/junit/platform/commons/util/ExceptionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1251,6 +1258,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day14/input">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1258,10 +1279,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="697">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="595" selection-start-line="595" selection-end-line="595" />
+          <folding>
+            <element signature="e#23684#23685#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1272,17 +1306,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="111">
+          <caret line="174" column="3" lean-forward="true" selection-start-line="174" selection-start-column="3" selection-end-line="193" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day15/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="250" column="59" lean-forward="true" selection-start-line="250" selection-start-column="59" selection-end-line="250" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
