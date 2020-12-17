@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2020.day15">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day16/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,65 +23,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="408">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5073#5074#0" expanded="true" />
+                <element signature="e#5109#5110#0" expanded="true" />
+                <element signature="e#5148#5149#0" expanded="true" />
+                <element signature="e#5199#5200#0" expanded="true" />
+                <element signature="e#6377#6378#0" expanded="true" />
+                <element signature="e#6439#6440#0" expanded="true" />
+                <element signature="e#6474#6475#0" expanded="true" />
+                <element signature="e#6525#6526#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+                <element signature="e#1959#1960#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="250" column="59" lean-forward="true" selection-start-line="250" selection-start-column="59" selection-end-line="250" selection-end-column="59" />
+            <state relative-caret-position="303">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day16/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day14/input">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="174" column="3" lean-forward="true" selection-start-line="174" selection-start-column="3" selection-end-line="193" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="87">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -100,11 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>map</find>
-      <find>\n&quot; +</find>
-      <find>eyr:2024 pid:662406624 hcl:#cfa07d byr:1947 iyr:2015 ecl:amb hgt:150cm</find>
-      <find>pid:391011205</find>
-      <find>f59bc7</find>
       <find>860033327</find>
       <find>println</find>
       <find>15115163</find>
@@ -130,12 +103,18 @@
       <find>Rege</find>
       <find>11110100010101111011001X0100XX00100X</find>
       <find>436</find>
+      <find>Integer::</find>
+      <find>a * b</find>
+      <find>integer::sum</find>
+      <find>pattern</find>
+      <find>Integer</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
       <replace>L,</replace>
       <replace>char</replace>
       <replace>&amp;&amp;</replace>
+      <replace>Long</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -145,9 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/advent2020/day6/CustomCustomsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day5/BinaryBoarding.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day7/input" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day7/Rule.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day7/sampleHierarchy" />
@@ -196,6 +172,9 @@
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day15/input" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day16/input" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" />
       </list>
     </option>
   </component>
@@ -210,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,15 +236,6 @@
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day15" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -319,18 +289,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day16" />
       <recent name="advent2020.day15" />
       <recent name="advent2020.day14" />
       <recent name="advent2020.day13" />
       <recent name="advent2020.day12" />
-      <recent name="advent2020" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
-      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="advent2020.day12" />
@@ -338,13 +304,17 @@
       <recent name="advent2020.day8" />
       <recent name="advent2020.day7" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\adventofcode\src\test" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day12" />
       <recent name="advent2020.day11" />
       <recent name="advent2020.day8" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\Generic\adventofcode\src\test" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
+      <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,7 +329,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RambunctiousRecitationTest.part2">
+  <component name="RunManager" selected="JUnit.TicketTranslationTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -368,73 +338,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RambunctiousRecitationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day15" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RambunctiousRecitationTest.nextNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day15" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
-      <option name="METHOD_NAME" value="nextNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RambunctiousRecitationTest.nextNumberSample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day15" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
-      <option name="METHOD_NAME" value="nextNumberSample1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RambunctiousRecitationTest.nextNumberSample2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day15" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
-      <option name="METHOD_NAME" value="nextNumberSample2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -450,6 +353,74 @@
       <option name="PACKAGE_NAME" value="advent2020.day15" />
       <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
       <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTranslationTest.findInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day16" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
+      <option name="METHOD_NAME" value="findInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTranslationTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day16" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
+      <option name="METHOD_NAME" value="part1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTranslationTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day16" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
+      <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTranslationTest.skipInvalidSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day16" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
+      <option name="METHOD_NAME" value="skipInvalidSample" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -483,11 +454,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketTranslationTest.part2" />
+        <item itemvalue="JUnit.TicketTranslationTest.skipInvalidSample" />
+        <item itemvalue="JUnit.TicketTranslationTest.part1" />
+        <item itemvalue="JUnit.TicketTranslationTest.findInvalid" />
         <item itemvalue="JUnit.RambunctiousRecitationTest.part2" />
-        <item itemvalue="JUnit.RambunctiousRecitationTest" />
-        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumberSample2" />
-        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumberSample1" />
-        <item itemvalue="JUnit.RambunctiousRecitationTest.nextNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +484,8 @@
       <workItem from="1607580737969" duration="1866000" />
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
-      <workItem from="1608017581700" duration="2466000" />
+      <workItem from="1608017581700" duration="4216000" />
+      <workItem from="1608117014694" duration="12676000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -620,43 +592,50 @@
       <option name="project" value="LOCAL" />
       <updated>1607980269638</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2020.day15">
+      <created>1608020381174</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608020381174</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 51m 32s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_skipInvalidSample - 2020.12.17 at 02h 02m 35s.xml">
+      <configuration name="TicketTranslationTest.skipInvalidSample" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 53m 20s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 03m 10s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumber - 2020.12.15 at 09h 53m 54s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumber" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 04m 45s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 57m 15s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 05m 36s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 57m 41s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 07m 36s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumberSample1 - 2020.12.15 at 09h 58m 02s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumberSample1" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 08m 44s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_nextNumberSample2 - 2020.12.15 at 09h 58m 36s.xml">
-      <configuration name="RambunctiousRecitationTest.nextNumberSample2" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 11m 31s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest - 2020.12.15 at 10h 00m 39s.xml">
-      <configuration name="RambunctiousRecitationTest" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 12m 01s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest - 2020.12.15 at 10h 18m 25s.xml">
-      <configuration name="RambunctiousRecitationTest" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 12m 36s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RambunctiousRecitationTest_part2 - 2020.12.15 at 10h 18m 37s.xml">
-      <configuration name="RambunctiousRecitationTest.part2" configurationId="JUnit" />
+    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 16m 07s.xml">
+      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162225000" />
+    <option name="totallyTimeSpent" value="176651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,7 +650,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14712153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -679,8 +658,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -723,7 +702,8 @@
     <MESSAGE value="2020.day12" />
     <MESSAGE value="2020.day13" />
     <MESSAGE value="2020.day14" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day14" />
+    <MESSAGE value="2020.day15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -778,6 +758,12 @@
           <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -795,6 +781,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>tickets.get(0).values</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>collect</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>collect.get(0).getValue().size()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>collect.get(0).getValue().size() == 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>result = new char[mask.length()];</expression-string>
         <language-id>JAVA</language-id>
@@ -817,26 +823,6 @@
       </expression>
       <expression>
         <expression-string>numberToMultipleX*x.busId+x.offset)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>busIds.size()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>busIds.get(1).offset</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>targetTime % Integer.valueOf(busId) == 0</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>busId</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -927,76 +913,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/Instruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2782#2783#0" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2884#2885#0" expanded="true" />
-            <element signature="e#2935#2936#0" expanded="true" />
-            <element signature="e#3274#3275#0" expanded="true" />
-            <element signature="e#3333#3334#0" expanded="true" />
-            <element signature="e#3395#3396#0" expanded="true" />
-            <element signature="e#3466#3467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/InstructionFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
-          <folding>
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/ArrayDeque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1226,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/org/junit/platform/commons/util/ExceptionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1247,17 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="582" selection-start-line="582" selection-end-line="582" />
-          <folding>
-            <element signature="e#33891#33892#0" expanded="true" />
-            <element signature="e#33919#33920#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1265,27 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day14/input">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1299,43 +1180,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day15/input" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="358" selection-start-line="358" selection-end-line="358" />
+        <state relative-caret-position="145">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="174" column="3" lean-forward="true" selection-start-line="174" selection-start-column="3" selection-end-line="193" selection-end-column="5" />
+        <state relative-caret-position="493">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day15/input">
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day14/DockingData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day15/RambunctiousRecitationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="250" column="59" lean-forward="true" selection-start-line="250" selection-start-column="59" selection-end-line="250" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day15/RambunctiousRecitation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="519">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day2/PasswordPhilosophy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day4/PassportProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="90" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day13/ShuttleSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day14/DockingDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="97" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="395" column="10" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="365" column="21" selection-start-line="365" selection-start-column="21" selection-end-line="365" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1561" column="17" selection-start-line="1561" selection-start-column="17" selection-end-line="1561" selection-end-column="17" />
+          <folding>
+            <element signature="e#33891#33892#0" expanded="true" />
+            <element signature="e#33919#33920#0" expanded="true" />
+            <element signature="e#59796#59797#0" expanded="true" />
+            <element signature="e#59824#59825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day16/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5073#5074#0" expanded="true" />
+            <element signature="e#5109#5110#0" expanded="true" />
+            <element signature="e#5148#5149#0" expanded="true" />
+            <element signature="e#5199#5200#0" expanded="true" />
+            <element signature="e#6377#6378#0" expanded="true" />
+            <element signature="e#6439#6440#0" expanded="true" />
+            <element signature="e#6474#6475#0" expanded="true" />
+            <element signature="e#6525#6526#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
           </folding>
         </state>
       </provider>
