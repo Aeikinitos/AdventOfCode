@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  */
 public class TicketTranslation {
 
-    public static long findInvalid(List<Ticket> tickets, List<TicketRule> ticketRules){
+    public static long calculateScanningError(List<Ticket> tickets, List<TicketRule> ticketRules){
 
         int invalidSum = tickets.stream()
                               .map(ticket -> ticket.values)
@@ -24,7 +24,7 @@ public class TicketTranslation {
         return invalidSum;
     }
 
-    public static Long skipInvalid(List<Ticket> tickets, List<TicketRule> ticketRules){
+    public static Long calculateFields(List<Ticket> tickets, List<TicketRule> ticketRules){
         List<Ticket> validTickets = tickets.stream()
                        // keep tickets that all their tokens are valid
                        .filter(ticket -> {
@@ -48,11 +48,6 @@ public class TicketTranslation {
                                          .collect(Collectors.collectingAndThen(Collectors.toList(), integers -> new TicketField(finalI, integers))));
         }
 
-        // for each rule
-        // find which columns are valid
-        // class -> 1,3
-        // row -> 1,2,3
-        // seat -> 3
 
         Map<String, List<Integer>> ticketRuleToFieldIndexes = new HashMap<>();
         ticketRules.forEach(ticketRule -> {
@@ -91,7 +86,10 @@ public class TicketTranslation {
         List<Integer> listOfDepartureFieldIndices = ticketRules.stream().filter(TicketRule::isDeparture).map(ticketRule -> ticketRule.name)
                                            .map(ticketRuleToField::get).collect(Collectors.toList());
 
-        return ticketFields.stream().filter(ticketField -> listOfDepartureFieldIndices.contains(ticketField.index)).map(ticketField -> tickets.get(0).values.get(ticketField.index)).map(Long::valueOf).reduce(1L,  (a, b) -> a * b);
+        return ticketFields.stream().filter(ticketField -> listOfDepartureFieldIndices.contains(ticketField.index))
+                           .map(ticketField -> tickets.get(0).values.get(ticketField.index))
+                           .map(Long::valueOf)
+                           .reduce(1L,  (a, b) -> a * b);
 
     }
 }

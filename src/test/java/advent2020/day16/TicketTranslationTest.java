@@ -27,7 +27,7 @@ class TicketTranslationTest {
                         new TicketRule("row", new TicketRuleRange(6,11), new TicketRuleRange(33,44)),
                         new TicketRule("seat", new TicketRuleRange(13,40), new TicketRuleRange(45,50))
         );
-        long invalid = TicketTranslation.findInvalid(tickets, ticketRules);
+        long invalid = TicketTranslation.calculateScanningError(tickets, ticketRules);
 
         Assertions.assertEquals(71, invalid);
     }
@@ -46,7 +46,7 @@ class TicketTranslationTest {
                                              .map(Ticket::fromString)
                                              .collect(Collectors.toList());
 
-        long invalid = TicketTranslation.findInvalid(tickets, ticketRules);
+        long invalid = TicketTranslation.calculateScanningError(tickets, ticketRules);
 
         System.out.println("Part1 :"+invalid);
 
@@ -66,7 +66,7 @@ class TicketTranslationTest {
                         new TicketRule("departure row", new TicketRuleRange(0,5), new TicketRuleRange(8,19)),
                         new TicketRule("seat", new TicketRuleRange(0,13), new TicketRuleRange(16,19))
         );
-        Long product = TicketTranslation.skipInvalid(tickets, ticketRules);
+        Long product = TicketTranslation.calculateFields(tickets, ticketRules);
 
         Assertions.assertEquals(11*12, product);
     }
@@ -89,7 +89,7 @@ class TicketTranslationTest {
                         .map(Ticket::fromString)
                         .collect(Collectors.collectingAndThen(Collectors.toList(), tickets::addAll));
 
-        Long product = TicketTranslation.skipInvalid(tickets, ticketRules);
+        Long product = TicketTranslation.calculateFields(tickets, ticketRules);
 
         System.out.println("Part2 :"+product);
 

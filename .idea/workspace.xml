@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day16/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrderPart2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day18/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5073#5074#0" expanded="true" />
@@ -45,11 +49,72 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
+                <element signature="e#1670#1671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrderPart2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="106" column="5" selection-start-line="17" selection-end-line="106" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Long.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="588" selection-start-line="588" selection-end-line="588" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day18/input">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="354" column="31" selection-start-line="354" selection-start-column="31" selection-end-line="354" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="184">
+              <caret line="75" selection-start-line="75" selection-end-line="76" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -58,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day16/input">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -78,11 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>860033327</find>
-      <find>println</find>
-      <find>15115163</find>
-      <find>gmt</find>
-      <find>#</find>
       <find>1=7</find>
       <find>51=</find>
       <find>51=2</find>
@@ -108,6 +168,11 @@
       <find>integer::sum</find>
       <find>pattern</find>
       <find>Integer</find>
+      <find>&quot;</find>
+      <find>d</find>
+      <find>OperationOrderPart2</find>
+      <find>OperationOrder</find>
+      <find>List&lt;Character&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -115,6 +180,10 @@
       <replace>char</replace>
       <replace>&amp;&amp;</replace>
       <replace>Long</replace>
+      <replace>'</replace>
+      <replace>OperationOrder</replace>
+      <replace>OperationOrderPart2</replace>
+      <replace>List&lt;String&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -124,11 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day7/Rule.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day7/sampleHierarchy" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day7/InnerBagRule.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day7/sampleOriginal" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day7/HandyHaversacksTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day7/HandyHaversacks.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day8/input" />
@@ -175,13 +239,19 @@
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day16/input" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day18/input" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrderPart2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrder.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -278,7 +348,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/advent2020/day12" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/advent2020/day18" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -289,11 +359,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day18" />
       <recent name="advent2020.day16" />
       <recent name="advent2020.day15" />
       <recent name="advent2020.day14" />
       <recent name="advent2020.day13" />
-      <recent name="advent2020.day12" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -305,6 +375,7 @@
       <recent name="advent2020.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\main\java\advent2020\day18" />
       <recent name="C:\Dev\Generic\adventofcode\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -329,7 +400,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TicketTranslationTest.part2">
+  <component name="RunManager" selected="JUnit.OperationOrderPart2Test">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -342,85 +413,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RambunctiousRecitationTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperationOrderPart2Part2Test.processInputParenthesis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day15.*" />
+          <option name="PATTERN" value="advent2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day15" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day15.RambunctiousRecitationTest" />
-      <option name="METHOD_NAME" value="part2" />
+      <option name="PACKAGE_NAME" value="advent2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day18.OperationOrderPart2Part2Test" />
+      <option name="METHOD_NAME" value="processInputParenthesis" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTranslationTest.findInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperationOrderPart2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="PATTERN" value="advent2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
-      <option name="METHOD_NAME" value="findInvalid" />
+      <option name="PACKAGE_NAME" value="advent2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day18.OperationOrderPart2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationOrderPart2Test.processInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day18.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day18.OperationOrderPart2Test" />
+      <option name="METHOD_NAME" value="processInput" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTranslationTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperationOrderPart2Test.processInputParenthesis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="PATTERN" value="advent2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
-      <option name="METHOD_NAME" value="part1" />
+      <option name="PACKAGE_NAME" value="advent2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day18.OperationOrderPart2Test" />
+      <option name="METHOD_NAME" value="processInputParenthesis" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTranslationTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperationOrderPart2Test.processInputParenthesisSample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day16.*" />
+          <option name="PATTERN" value="advent2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
-      <option name="METHOD_NAME" value="part2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketTranslationTest.skipInvalidSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day16.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day16.TicketTranslationTest" />
-      <option name="METHOD_NAME" value="skipInvalidSample" />
+      <option name="PACKAGE_NAME" value="advent2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day18.OperationOrderPart2Test" />
+      <option name="METHOD_NAME" value="processInputParenthesisSample1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -454,11 +524,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TicketTranslationTest.part2" />
-        <item itemvalue="JUnit.TicketTranslationTest.skipInvalidSample" />
-        <item itemvalue="JUnit.TicketTranslationTest.part1" />
-        <item itemvalue="JUnit.TicketTranslationTest.findInvalid" />
-        <item itemvalue="JUnit.RambunctiousRecitationTest.part2" />
+        <item itemvalue="JUnit.OperationOrderPart2Test" />
+        <item itemvalue="JUnit.OperationOrderPart2Test.processInputParenthesis" />
+        <item itemvalue="JUnit.OperationOrderPart2Test.processInputParenthesisSample1" />
+        <item itemvalue="JUnit.OperationOrderPart2Test.processInput" />
+        <item itemvalue="JUnit.OperationOrderPart2Part2Test.processInputParenthesis" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +555,7 @@
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
       <workItem from="1608017581700" duration="4216000" />
-      <workItem from="1608117014694" duration="12676000" />
+      <workItem from="1608117014694" duration="31457000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -599,43 +669,50 @@
       <option name="project" value="LOCAL" />
       <updated>1608020381174</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2020.day16">
+      <created>1608191039940</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608191039940</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TicketTranslationTest_skipInvalidSample - 2020.12.17 at 02h 02m 35s.xml">
-      <configuration name="TicketTranslationTest.skipInvalidSample" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 23m 07s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 03m 10s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 24m 42s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 04m 45s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 25m 20s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 05m 36s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 25m 55s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 07m 36s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 26m 32s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 08m 44s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 27m 22s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 11m 31s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 27m 38s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 12m 01s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 27m 56s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 12m 36s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test_processInputParenthesis - 2020.12.18 at 15h 28m 02s.xml">
+      <configuration name="OperationOrderPart2Test.processInputParenthesis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TicketTranslationTest_part2 - 2020.12.17 at 02h 16m 07s.xml">
-      <configuration name="TicketTranslationTest.part2" configurationId="JUnit" />
+    <history-entry file="OperationOrderPart2Test - 2020.12.18 at 15h 28m 08s.xml">
+      <configuration name="OperationOrderPart2Test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176651000" />
+    <option name="totallyTimeSpent" value="195432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -703,7 +780,8 @@
     <MESSAGE value="2020.day13" />
     <MESSAGE value="2020.day14" />
     <MESSAGE value="2020.day15" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day15" />
+    <MESSAGE value="2020.day16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,6 +793,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="81" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="153" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2020/day12/RainRisk.java</url>
@@ -768,9 +850,8 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="N" language="JAVA" />
-        <watch expression="E" language="JAVA" />
-        <watch expression="1607854804468L == targetTime" language="JAVA" />
+        <watch expression="onlyPlus" />
+        <watch expression="input" />
       </configuration>
     </watches-manager>
   </component>
@@ -781,6 +862,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>calculateInput(Arrays.asList());</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sublistParenthesis(i, input)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Long.valueOf(String.valueOf(character));</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Long.parseLong(String.valueOf(character));</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>tickets.get(0).values</expression-string>
         <language-id>JAVA</language-id>
@@ -803,26 +904,6 @@
       </expression>
       <expression>
         <expression-string>result = new char[mask.length()];</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Integer.toBinaryString(Integer.valueOf(value))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Integer.toBinaryString(Integer.valueOf(value)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>numberToMultipleX*x.busId+x.offset</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>numberToMultipleX*x.busId+x.offset)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -913,54 +994,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="150" column="92" selection-start-line="150" selection-start-column="50" selection-end-line="150" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day10/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day9/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16983">
-          <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day11/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="97" column="96" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1272,21 +1305,14 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day16/input">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day16/TicketTranslation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5073#5074#0" expanded="true" />
@@ -1299,6 +1325,69 @@
             <element signature="e#6525#6526#0" expanded="true" />
             <element signature="e#1931#1932#0" expanded="true" />
             <element signature="e#1959#1960#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day16/TicketTranslationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="75" selection-start-line="75" selection-end-line="76" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day18/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="354" column="31" selection-start-line="354" selection-start-column="31" selection-end-line="354" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="588" selection-start-line="588" selection-end-line="588" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="106" column="5" selection-start-line="17" selection-end-line="106" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrderPart2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day18/OperationOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
           </folding>
         </state>
       </provider>
