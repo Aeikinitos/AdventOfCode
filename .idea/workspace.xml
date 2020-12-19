@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2020.day19.part1">
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes4D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubes4DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,14 +24,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-960">
-              <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="184">
+              <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes4D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubes4DTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -42,33 +71,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day19/inputPart2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day19/samplePart2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day19/input">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="488" column="32" selection-start-line="488" selection-start-column="32" selection-end-line="488" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -88,8 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Integer::</find>
-      <find>a * b</find>
       <find>integer::sum</find>
       <find>pattern</find>
       <find>Integer</find>
@@ -118,6 +118,8 @@
       <find>8: 42 | 42 8</find>
       <find>8: 42</find>
       <find>14:</find>
+      <find>//</find>
+      <find>Coordinates3D</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -129,6 +131,8 @@
       <replace>OperationOrder</replace>
       <replace>OperationOrderPart2</replace>
       <replace>List&lt;String&gt;</replace>
+      <replace>&quot;</replace>
+      <replace>Coordinates4D</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -138,10 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/InstructionFunction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/advent2020/day8/HandheldHaltingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHalting2.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day8/HandheldHaltingWithUndo.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day9/EncodingErrorTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day9/input" />
@@ -189,6 +189,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day19/samplePart2" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubes4DTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes4D.java" />
       </list>
     </option>
   </component>
@@ -251,6 +255,25 @@
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
+              <item name="day17" type="462c0819:PsiDirectoryNode" />
+              <item name="ConwayCubes4D.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,7 +325,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/advent2020/day12" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/advent2020/day19" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/advent2020/day17" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -313,11 +336,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day17" />
       <recent name="advent2020.day19" />
       <recent name="advent2020.day18" />
       <recent name="advent2020.day16" />
       <recent name="advent2020.day15" />
-      <recent name="advent2020.day14" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -329,6 +352,7 @@
       <recent name="advent2020.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\main\java\advent2020\day17" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020\day19" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\main\java\advent2020\day18" />
       <recent name="C:\Dev\Generic\adventofcode\src\test" />
@@ -355,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MonsterMessagesTest">
+  <component name="RunManager" selected="JUnit.ConwayCubes4DTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -364,6 +388,74 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayCubes4DTest.nextCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day17" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubes4DTest" />
+      <option name="METHOD_NAME" value="nextCycle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayCubes4DTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day17" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubes4DTest" />
+      <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayCubesTest.nextCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day17" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubesTest" />
+      <option name="METHOD_NAME" value="nextCycle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayCubesTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day17" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubesTest" />
+      <option name="METHOD_NAME" value="part1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -379,74 +471,6 @@
       <option name="PACKAGE_NAME" value="advent2020.day19" />
       <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMessagesTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day19" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
-      <option name="METHOD_NAME" value="part2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMessagesTest.part2Loop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day19" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
-      <option name="METHOD_NAME" value="part2Loop" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMessagesTest.part2Manual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day19" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
-      <option name="METHOD_NAME" value="part2Manual" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonsterMessagesTest.part2Sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day19" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
-      <option name="METHOD_NAME" value="part2Sample" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -479,11 +503,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConwayCubes4DTest.part2" />
+        <item itemvalue="JUnit.ConwayCubes4DTest.nextCycle" />
+        <item itemvalue="JUnit.ConwayCubesTest.part1" />
+        <item itemvalue="JUnit.ConwayCubesTest.nextCycle" />
         <item itemvalue="JUnit.MonsterMessagesTest" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part2" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part2Loop" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part2Manual" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part2Sample" />
       </list>
     </recent_temporary>
   </component>
@@ -510,7 +534,7 @@
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
       <workItem from="1608017581700" duration="4216000" />
-      <workItem from="1608117014694" duration="55813000" />
+      <workItem from="1608117014694" duration="58283000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -645,43 +669,50 @@
       <option name="project" value="LOCAL" />
       <updated>1608405314260</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2020.day19.part2">
+      <created>1608409623514</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608409623514</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MonsterMessagesTest - 2020.12.19 at 21h 48m 27s.xml">
-      <configuration name="MonsterMessagesTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 21h 48m 47s.xml">
-      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 21h 49m 17s.xml">
-      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 22h 23m 34s.xml">
-      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part1 - 2020.12.19 at 22h 23m 42s.xml">
-      <configuration name="MonsterMessagesTest.part1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Sample - 2020.12.19 at 22h 23m 46s.xml">
-      <configuration name="MonsterMessagesTest.part2Sample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Manual - 2020.12.19 at 22h 23m 49s.xml">
-      <configuration name="MonsterMessagesTest.part2Manual" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 22h 23m 53s.xml">
-      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2 - 2020.12.19 at 22h 23m 58s.xml">
-      <configuration name="MonsterMessagesTest.part2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MonsterMessagesTest - 2020.12.19 at 22h 25m 35s.xml">
       <configuration name="MonsterMessagesTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 54m 57s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 56m 45s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 57m 31s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 57m 58s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 58m 37s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_nextCycle - 2020.12.19 at 22h 59m 49s.xml">
+      <configuration name="ConwayCubesTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubesTest_part1 - 2020.12.19 at 23h 01m 25s.xml">
+      <configuration name="ConwayCubesTest.part1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubes4DTest_nextCycle - 2020.12.19 at 23h 05m 40s.xml">
+      <configuration name="ConwayCubes4DTest.nextCycle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConwayCubes4DTest_part2 - 2020.12.19 at 23h 06m 22s.xml">
+      <configuration name="ConwayCubes4DTest.part2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219788000" />
+    <option name="totallyTimeSpent" value="222258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,7 +783,8 @@
     <MESSAGE value="2020.day16" />
     <MESSAGE value="2020.day18" />
     <MESSAGE value="2020.day19.part1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day19.part1" />
+    <MESSAGE value="2020.day19.part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day19.part2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,6 +866,12 @@
           <line>77</line>
           <properties />
           <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -983,34 +1021,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day11/Adjucent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day11/Decider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day11/SeatingSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day11/Visible.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1379,11 +1389,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="434">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day17/ConwayCubes4DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day17/ConwayCubes4D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
         </state>
       </provider>
     </entry>
