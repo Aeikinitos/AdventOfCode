@@ -80,21 +80,6 @@ class MonsterMessagesTest {
     }
 
     @Test
-    void part2Loop() {
-
-        MonsterMessages monsterMessages = new MonsterMessages();
-        monsterMessages.parseRawInput(Arrays.asList(
-                        "0: 3 | 0 1",
-                        "3: \"b\"",
-                        "1: \"a\""
-        ));
-
-        boolean valid = monsterMessages.processInput("ba");
-        Assertions.assertTrue(valid);
-    }
-
-
-    @Test
     void part2() {
         List<String> lines = readLines("src/test/resources/advent2020/day19/inputPart2");
         String[] rules = lines.get(0).split("\\n");

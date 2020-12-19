@@ -30,24 +30,14 @@ public class MonsterMessages {
     }
 
     public boolean processInput(String input){
-        Optional<String> s = ruleIds.get(0).consume(input).filter(String::isEmpty);
-//        s.ifPresent(s1 ->  System.out.println(input));
-        return s.isPresent();
+        return ruleIds.get(0).branch(input).stream().filter(String::isEmpty).count() > 0;
     }
 
     @Data
     abstract class MessageRule {
         Integer id;
 
-        /*
-        consumes any possible input and returns the remaining
-        A rule that matches "a" with input will return
-        input | return
-        "a"     Optional("")
-        "b"     Optional.empty()
-        "ab"    Optional("b")
-         */
-        public abstract Optional<String> consume(String input);
+        public abstract List<String> branch(String input);
     }
 
     @Data
@@ -61,11 +51,11 @@ public class MonsterMessages {
         }
 
         @Override
-        public Optional<String> consume(String input) {
+        public List<String> branch(String input) {
             if(input.startsWith(matcher)){
-                return Optional.of(input.substring(matcher.length()));
+                return Arrays.asList(input.substring(matcher.length()));
             }
-            return Optional.empty();
+            return new ArrayList<>();
         }
     }
 
@@ -78,35 +68,27 @@ public class MonsterMessages {
             addOption(matcher.group("option1")); // ie 4 1
             addOption(matcher.group("option2"));
         }
-        // 0: 4 1 5
-        // 1: 2 3 | 3 2 -> aaab, aaba, bbab, bbba | abaa, abbb, baaa, babb
-        // 2: 4 4 | 5 5 (aa, bb)
-        // 3: 4 5 | 5 4 (ab, ba)
-        // 4: a
-        // 5: b
-        // Traverse depth first
-        @Override
-        public Optional<String> consume(String input) {
 
+        public List<String> branch(String input) {
+            // for this rule to completely consume the input, consider both option for which
+            // rule 1 can consume multiple ways and leave multiple remainders
+            // which the rule 2 consumes
+            // if any of the variations is empty, it means the combo rule 1&2 can consume it fully
+
+            List<String> remainingVariants = new ArrayList<>();
             for (List<Integer> option : orMessageRules) {
-                Optional<String> remaining = Optional.of(input);
-                boolean invalidOption= false;
-
+                List<String> branches = Arrays.asList(input);
                 for (Integer ruleId : option) {
-                    MessageRule rule = ruleIds.get(ruleId);
-                    String remainingStrin = remaining.get();
-                    remaining = rule.consume(remainingStrin);
-                    if(!remaining.isPresent()){
-                        // option is invalid
-                        invalidOption = true;
-                        break;
+                    List<String> nextBranches = new ArrayList<>();
+                    for (String branch : branches) {
+                        MessageRule rule = ruleIds.get(ruleId);
+                        nextBranches.addAll(rule.branch(branch));
                     }
+                    branches = nextBranches;
                 }
-                if(!invalidOption){
-                    return remaining;
-                }
+                remainingVariants.addAll(branches);
             }
-            return Optional.empty();
+            return remainingVariants;
         }
 
         public void addOption(String input){

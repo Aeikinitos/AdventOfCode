@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day19/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day19/inputPart2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day19/samplePart2" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2020.day19.part1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day18/OperationOrderPart2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="103" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="-960">
+              <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="847">
-              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+            <state relative-caret-position="1250">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -388,23 +384,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonsterMessagesTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day19" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
-      <option name="METHOD_NAME" value="part1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MonsterMessagesTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
@@ -456,6 +435,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MonsterMessagesTest.part2Sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day19" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day19.MonsterMessagesTest" />
+      <option name="METHOD_NAME" value="part2Sample" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -484,10 +480,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MonsterMessagesTest" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part1" />
-        <item itemvalue="JUnit.MonsterMessagesTest.part2Manual" />
         <item itemvalue="JUnit.MonsterMessagesTest.part2" />
         <item itemvalue="JUnit.MonsterMessagesTest.part2Loop" />
+        <item itemvalue="JUnit.MonsterMessagesTest.part2Manual" />
+        <item itemvalue="JUnit.MonsterMessagesTest.part2Sample" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +510,7 @@
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
       <workItem from="1608017581700" duration="4216000" />
-      <workItem from="1608117014694" duration="51845000" />
+      <workItem from="1608117014694" duration="55813000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -642,43 +638,50 @@
       <option name="project" value="LOCAL" />
       <updated>1608298220355</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2020.day19.part1">
+      <created>1608405314260</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608405314260</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 20h 44m 55s.xml">
-      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
+    <history-entry file="MonsterMessagesTest - 2020.12.19 at 21h 48m 27s.xml">
+      <configuration name="MonsterMessagesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 20h 45m 26s.xml">
-      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
+    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 21h 48m 47s.xml">
+      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 20h 45m 46s.xml">
-      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
+    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 21h 49m 17s.xml">
+      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 20h 46m 07s.xml">
-      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
+    <history-entry file="MonsterMessagesTest_processInput - 2020.12.19 at 22h 23m 34s.xml">
+      <configuration name="MonsterMessagesTest.processInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part2 - 2020.12.19 at 20h 51m 21s.xml">
-      <configuration name="MonsterMessagesTest.part2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2 - 2020.12.19 at 20h 51m 43s.xml">
-      <configuration name="MonsterMessagesTest.part2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Manual - 2020.12.19 at 20h 52m 12s.xml">
-      <configuration name="MonsterMessagesTest.part2Manual" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MonsterMessagesTest_part1 - 2020.12.19 at 21h 13m 39s.xml">
+    <history-entry file="MonsterMessagesTest_part1 - 2020.12.19 at 22h 23m 42s.xml">
       <configuration name="MonsterMessagesTest.part1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part2Manual - 2020.12.19 at 21h 14m 01s.xml">
+    <history-entry file="MonsterMessagesTest_part2Sample - 2020.12.19 at 22h 23m 46s.xml">
+      <configuration name="MonsterMessagesTest.part2Sample" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonsterMessagesTest_part2Manual - 2020.12.19 at 22h 23m 49s.xml">
       <configuration name="MonsterMessagesTest.part2Manual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MonsterMessagesTest_part1 - 2020.12.19 at 21h 14m 11s.xml">
-      <configuration name="MonsterMessagesTest.part1" configurationId="JUnit" />
+    <history-entry file="MonsterMessagesTest_part2Loop - 2020.12.19 at 22h 23m 53s.xml">
+      <configuration name="MonsterMessagesTest.part2Loop" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonsterMessagesTest_part2 - 2020.12.19 at 22h 23m 58s.xml">
+      <configuration name="MonsterMessagesTest.part2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonsterMessagesTest - 2020.12.19 at 22h 25m 35s.xml">
+      <configuration name="MonsterMessagesTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215820000" />
+    <option name="totallyTimeSpent" value="219788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +751,8 @@
     <MESSAGE value="2020.day15" />
     <MESSAGE value="2020.day16" />
     <MESSAGE value="2020.day18" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day18" />
+    <MESSAGE value="2020.day19.part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day19.part1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,6 +822,18 @@
           <line>19</line>
           <properties />
           <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="199" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1353,8 +1369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day19/MonsterMessagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        <state relative-caret-position="1250">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1363,8 +1379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day19/MonsterMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="-960">
+          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
