@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day20/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day20/sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day20/JigsawPieceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="281">
+              <caret line="61" column="44" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -36,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day20/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="1727" selection-start-line="1727" selection-end-line="1727" />
+            <state relative-caret-position="331">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="249" column="31" lean-forward="true" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5383#5384#0" expanded="true" />
@@ -57,10 +56,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day20/JigsawPieceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day20/sample">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+              <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -80,27 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pattern</find>
-      <find>Integer</find>
-      <find>&quot;</find>
-      <find>d</find>
-      <find>OperationOrderPart2</find>
-      <find>OperationOrder</find>
-      <find>List&lt;Character&gt;</find>
-      <find>Reg</find>
-      <find>abbbab</find>
-      <find>Arrays.asList(</find>
-      <find>126:</find>
-      <find>42:</find>
-      <find>27:</find>
-      <find>9:</find>
-      <find>:</find>
-      <find>11:</find>
-      <find>8:</find>
-      <find>invalid option for input: a</find>
-      <find>15:</find>
-      <find>11</find>
-      <find>14</find>
       <find>aaaaabbaabaaaaababaa</find>
       <find>42</find>
       <find>34</find>
@@ -110,6 +97,27 @@
       <find>//</find>
       <find>Coordinates3D</find>
       <find>piece.bottom</find>
+      <find>JigsawPiece::getRight</find>
+      <find>JigsawPiece::getLeft</find>
+      <find>JigsawPiece::getTop</find>
+      <find>JigsawPiece::getBottom</find>
+      <find>.orElseThrow(() -&gt; new Exception(&quot;&quot;))</find>
+      <find>nextPiece</find>
+      <find>oving vertical</find>
+      <find>tryDirection(corners, sides, startingPiece,</find>
+      <find>return tryDirection(corners, sides, startingPiece,</find>
+      <find>hing id</find>
+      <find>ing vertically</find>
+      <find>sotos</find>
+      <find>1571</find>
+      <find>irst row/column</find>
+      <find>3643</find>
+      <find>getRight</find>
+      <find>getTop</find>
+      <find>Match</find>
+      <find>3371</find>
+      <find>2663</find>
+      <find>flipHorizontallyTile</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -124,6 +132,12 @@
       <replace>&quot;</replace>
       <replace>Coordinates4D</replace>
       <replace>pieceSide.getSide(piece)</replace>
+      <replace>moveHorizontal</replace>
+      <replace>moveReverseHorizontal</replace>
+      <replace>moveVertical</replace>
+      <replace>moveReverseVerical</replace>
+      <replace>nextPiece.get()</replace>
+      <replace>grid = completeImage(corners, sides, centers, pieces,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day9/EncodingError.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day10/AdapterArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/SeatingSystem.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/SeatingSystemTest.java" />
@@ -183,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day20/sample" />
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day20/input" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day20/JigsawPieceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java" />
       </list>
     </option>
@@ -361,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JurassicJigsawTest.part1">
+  <component name="RunManager" selected="JUnit.JurassicJigsawTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -370,23 +384,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConwayCubes4DTest.nextCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day17" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubes4DTest" />
-      <option name="METHOD_NAME" value="nextCycle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -408,17 +405,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayCubesTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JigsawPieceTest.rotated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day17.*" />
+          <option name="PATTERN" value="advent2020.day20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day17" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day17.ConwayCubesTest" />
-      <option name="METHOD_NAME" value="part1" />
+      <option name="PACKAGE_NAME" value="advent2020.day20" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day20.JigsawPieceTest" />
+      <option name="METHOD_NAME" value="rotated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -459,6 +456,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JurassicJigsawTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day20" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day20.JurassicJigsawTest" />
+      <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -486,11 +500,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JurassicJigsawTest.part1" />
+        <item itemvalue="JUnit.JurassicJigsawTest.part2" />
+        <item itemvalue="JUnit.JigsawPieceTest.rotated" />
         <item itemvalue="JUnit.JurassicJigsawTest.parseInput" />
+        <item itemvalue="JUnit.JurassicJigsawTest.part1" />
         <item itemvalue="JUnit.ConwayCubes4DTest.part2" />
-        <item itemvalue="JUnit.ConwayCubes4DTest.nextCycle" />
-        <item itemvalue="JUnit.ConwayCubesTest.part1" />
       </list>
     </recent_temporary>
   </component>
@@ -517,7 +531,7 @@
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
       <workItem from="1608017581700" duration="4216000" />
-      <workItem from="1608117014694" duration="73913000" />
+      <workItem from="1608117014694" duration="96757000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -666,43 +680,50 @@
       <option name="project" value="LOCAL" />
       <updated>1608412097784</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2020.day20.part1">
+      <created>1608481720276</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608481720276</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 05m 01s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 44m 04s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 05m 58s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JigsawPieceTest_rotated - 2020.12.21 at 00h 47m 35s.xml">
+      <configuration name="JigsawPieceTest.rotated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 06m 53s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 47m 38s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 07m 50s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JigsawPieceTest_rotated - 2020.12.21 at 00h 47m 42s.xml">
+      <configuration name="JigsawPieceTest.rotated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 21m 38s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JigsawPieceTest_rotated - 2020.12.21 at 00h 48m 15s.xml">
+      <configuration name="JigsawPieceTest.rotated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 22m 20s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 48m 29s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_parseInput - 2020.12.20 at 18h 23m 02s.xml">
-      <configuration name="JurassicJigsawTest.parseInput" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 52m 54s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_part1 - 2020.12.20 at 18h 24m 12s.xml">
-      <configuration name="JurassicJigsawTest.part1" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 53m 03s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_part1 - 2020.12.20 at 18h 26m 08s.xml">
-      <configuration name="JurassicJigsawTest.part1" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 53m 31s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JurassicJigsawTest_part1 - 2020.12.20 at 18h 26m 39s.xml">
-      <configuration name="JurassicJigsawTest.part1" configurationId="JUnit" />
+    <history-entry file="JurassicJigsawTest_part2 - 2020.12.21 at 00h 53m 52s.xml">
+      <configuration name="JurassicJigsawTest.part2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237888000" />
+    <option name="totallyTimeSpent" value="260732000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,7 +748,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34555554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -775,7 +796,8 @@
     <MESSAGE value="2020.day19.part1" />
     <MESSAGE value="2020.day19.part2" />
     <MESSAGE value="2020.day17" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day17" />
+    <MESSAGE value="2020.day20.part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day20.part1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -866,15 +888,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java</url>
-          <line>42</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java</url>
@@ -896,6 +912,31 @@
           <properties />
           <option name="timeStamp" value="225" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="piece.id == 1171" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -913,52 +954,57 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>isMatching(piece, JigsawPiece::getLeft, otherPiece, JigsawPiece::getRight);</expression-string>
+        <expression-string>piece.flippedHorizontlaly();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>isMatching(piece, JigsawPiece::getLeft, otherPiece, JigsawPiece::getRight)</expression-string>
+        <expression-string>piece</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cornerPieces</expression-string>
+        <expression-string>rawInput.subList(1, rawInput.size());</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>targetSide.getSide(target)</expression-string>
+        <expression-string>startingCorner = startingCorner.rotated();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pieceSide.getSide(piece).equals(targetSide.getSide(target)</expression-string>
+        <expression-string>startingCorner = startingCorner.flippedReverse();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>matcher.group(2)</expression-string>
+        <expression-string>pieceMatching(piece, pieceSide, (piece) -&gt; (piece.get), nextSide)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>matcher.group(4)</expression-string>
+        <expression-string>pieceMatching(piece, pieceSide, JigsawPiece::getRight, nextSide)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>matcher.group(3)</expression-string>
+        <expression-string>pieceMatching(piece, pieceSide, sidePiece, nextSide)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>matcher.group(1)</expression-string>
+        <expression-string>pieceMatching(piece, pieceSide, sidePiece, nextSide);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>piece.id == 1171</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>piece.id == 2473 &amp;&amp; (otherPiece.id == 3079||otherPiece.id == 1427||otherPiece.id == 1171)</expression-string>
         <language-id>JAVA</language-id>
@@ -999,11 +1045,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>remainingStrin.equals(&quot;a&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="watch">
       <expression>
@@ -1039,20 +1080,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day12/RainRisk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day12/NavigationInstruction.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day12/ShipState.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1418,31 +1445,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day20/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="1727" selection-start-line="1727" selection-end-line="1727" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day20/sample">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="2993" column="44" selection-start-line="2993" selection-start-column="44" selection-end-line="2993" selection-end-column="44" />
+          <folding>
+            <element signature="e#117893#117894#0" expanded="true" />
+            <element signature="e#117955#117956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day20/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day20/JigsawPieceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day20/JurassicJigsawTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="281">
+          <caret line="61" column="44" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day20/JurassicJigsaw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="249" column="31" lean-forward="true" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5383#5384#0" expanded="true" />

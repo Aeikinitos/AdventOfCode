@@ -22,9 +22,14 @@ class JurassicJigsawTest {
         List<JigsawPiece> jigsawPieces = JurassicJigsaw.parseInput(input);
 
         List<JigsawPiece> corners = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CORNER).stream().distinct().collect(Collectors.toList());
-        List<JigsawPiece> horizontalPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.HORIZONTAL).stream().distinct().collect(Collectors.toList());
-        List<JigsawPiece> verticalPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.VERTICAL).stream().distinct().collect(Collectors.toList());
+        List<JigsawPiece> sidePieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.HORIZONTAL).stream().distinct().collect(Collectors.toList());
         List<JigsawPiece> centerPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CENTER).stream().distinct().collect(Collectors.toList());
+
+//        JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
+        List<List<JigsawPiece>> lists = JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
+        if(!lists.isEmpty()){
+            System.out.println("Yhoo");
+        }
     }
 
     @Test
@@ -34,12 +39,32 @@ class JurassicJigsawTest {
         List<JigsawPiece> jigsawPieces = JurassicJigsaw.parseInput(input);
 
         List<JigsawPiece> corners = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CORNER).stream().distinct().collect(Collectors.toList());
-        List<JigsawPiece> horizontalPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.HORIZONTAL).stream().distinct().collect(Collectors.toList());
-        List<JigsawPiece> verticalPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.VERTICAL).stream().distinct().collect(Collectors.toList());
-        List<JigsawPiece> centerPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CENTER).stream().distinct().collect(Collectors.toList());
+
 
         long answer = corners.stream().map(JigsawPiece::getId).reduce(1L, (product, id) -> product * id).longValue();
         System.out.println("Part1 :" + answer);
+    }
+
+    @Test
+    void part2(){
+        List<String> input = readLines("src/test/resources/advent2020/day20/input");
+
+        List<JigsawPiece> jigsawPieces = JurassicJigsaw.parseInput(input);
+
+        List<JigsawPiece> corners = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CORNER).stream().distinct().collect(Collectors.toList());
+        List<JigsawPiece> sidePieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.HORIZONTAL).stream().distinct().collect(Collectors.toList());
+        List<JigsawPiece> centerPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CENTER).stream().distinct().collect(Collectors.toList());
+
+        List<List<JigsawPiece>> image = JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
+        if(!image.isEmpty()){
+            for (List<JigsawPiece> lines : image) {
+                for (JigsawPiece piece : lines) {
+                    System.out.println(piece);
+                }
+            }
+//            JurassicJigsaw.printInOrder(input, image);
+            
+        }
     }
 
     /* *************************************** */

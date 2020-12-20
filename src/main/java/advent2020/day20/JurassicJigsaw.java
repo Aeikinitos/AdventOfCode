@@ -22,7 +22,7 @@ public class JurassicJigsaw {
         return pieces;
     }
 
-    public static JigsawPiece parseJigsawPiece(List<String> rawInput){
+    private static JigsawPiece parseJigsawPiece(List<String> rawInput){
         Matcher matcher = TILE_PATTERN.matcher(rawInput.get(0));
         matcher.find();
         Long id = Long.valueOf(matcher.group("id"));
@@ -33,19 +33,19 @@ public class JurassicJigsaw {
             left.append(rawInput.get(i).charAt(0));
             right.append(rawInput.get(i).charAt(rawInput.get(i).length()-1));
         }
-        return new JigsawPiece(id, rawInput.get(1), rawInput.get(rawInput.size()-1), left.toString(), right.toString());
+        return new JigsawPiece(id, rawInput.get(1), rawInput.get(rawInput.size()-1), left.toString(), right.toString(), rawInput.subList(1, rawInput.size()));
     }
 
     public static List<JigsawPiece> findCategorizedPieces(List<JigsawPiece>  pieces, CategorizePiece condition){
-        List<JigsawPiece> cornerPieces = new ArrayList<>();
+        List<JigsawPiece> categorizedPieces = new ArrayList<>();
         for (JigsawPiece piece : pieces) {
-            findCategorizedPiece(pieces, piece, condition).ifPresent(cornerPieces::add);
-            findCategorizedPiece(pieces, piece.rotated(), condition).ifPresent(cornerPieces::add);
-            findCategorizedPiece(pieces, piece.flipped(), condition).ifPresent(cornerPieces::add);
-            findCategorizedPiece(pieces, piece.flippedReverse(), condition).ifPresent(cornerPieces::add);
+            findCategorizedPiece(pieces, piece, condition).ifPresent(categorizedPieces::add);
+            findCategorizedPiece(pieces, piece.rotated(), condition).ifPresent(categorizedPieces::add);
+            findCategorizedPiece(pieces, piece.flippedHorizontlaly(), condition).ifPresent(categorizedPieces::add);
+            findCategorizedPiece(pieces, piece.flippedVertically(), condition).ifPresent(categorizedPieces::add);
         }
 
-        return cornerPieces;
+        return categorizedPieces;
     }
 
     private static Optional<JigsawPiece> findCategorizedPiece(List<JigsawPiece> pieces, JigsawPiece piece, CategorizePiece condition) {
@@ -56,10 +56,10 @@ public class JurassicJigsaw {
         for (JigsawPiece otherPiece : pieces) {
             if(piece.equals(otherPiece)) continue; // skip self
 
-            isTopMatched    = isTopMatched || isMatching(piece, JigsawPiece::getTop, otherPiece, JigsawPiece::getBottom);
-            isBottomMatched = isBottomMatched || isMatching(piece, JigsawPiece::getBottom, otherPiece, JigsawPiece::getTop);
-            isLeftMatched   = isLeftMatched || isMatching(piece, JigsawPiece::getLeft, otherPiece, JigsawPiece::getRight);
-            isRightMatched  = isRightMatched || isMatching(piece, JigsawPiece::getRight, otherPiece, JigsawPiece::getLeft);
+            isTopMatched    = isTopMatched || pieceMatching(piece, JigsawPiece::getTop, otherPiece, JigsawPiece::getBottom).isPresent();
+            isBottomMatched = isBottomMatched || pieceMatching(piece, JigsawPiece::getBottom, otherPiece, JigsawPiece::getTop).isPresent();
+            isLeftMatched   = isLeftMatched || pieceMatching(piece, JigsawPiece::getLeft, otherPiece, JigsawPiece::getRight).isPresent();
+            isRightMatched  = isRightMatched || pieceMatching(piece, JigsawPiece::getRight, otherPiece, JigsawPiece::getLeft).isPresent();
         }
 
         if( condition.test(isTopMatched,isBottomMatched, isLeftMatched, isRightMatched) ) {
@@ -69,13 +69,16 @@ public class JurassicJigsaw {
         return Optional.empty();
     }
 
-    private static boolean isMatching(JigsawPiece target, getSide targetSide, JigsawPiece piece, getSide pieceSide){
+    private static Optional<JigsawPiece> pieceMatching(JigsawPiece target, Direction targetSide, JigsawPiece piece, Direction pieceSide){
         for (int i = 0; i < 4; i++) {
-            if(pieceSide.getSide(piece).equals(targetSide.getSide(target))
-                            || pieceSide.getSide(piece.flipped()).equals(targetSide.getSide(target))
-                            || pieceSide.getSide(piece.flippedReverse()).equals(targetSide.getSide(target))
-            ){
-                return true;
+            if(pieceSide.getSide(piece).equals(targetSide.getSide(target))){
+                return Optional.of(piece);
+            }
+            if(pieceSide.getSide(piece.flippedHorizontlaly()).equals(targetSide.getSide(target))){
+                return Optional.of(piece.flippedHorizontlaly());
+            }
+            if(pieceSide.getSide(piece.flippedVertically()).equals(targetSide.getSide(target))){
+                return Optional.of(piece.flippedVertically());
             }
 
             // rotate 90 degress 3 times
@@ -83,12 +86,120 @@ public class JurassicJigsaw {
 
         }
 
-        return false;
+        return Optional.empty();
+    }
+
+    public static List<List<JigsawPiece>> completeImage(List<JigsawPiece> corners, List<JigsawPiece> sides, List<JigsawPiece> centers, List<JigsawPiece> pieces) {
+        List<List<JigsawPiece>>
+//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getTop, JigsawPiece::getLeft, JigsawPiece::getBottom);
+//        if(!grid.isEmpty()) return grid;
+//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft, JigsawPiece::getTop);
+//        if(!grid.isEmpty()) return grid;
+//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft);
+//        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getTop, JigsawPiece::getLeft, JigsawPiece::getBottom, JigsawPiece::getRight);
+        if(!grid.isEmpty()) return grid;
+//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom);
+        if(!grid.isEmpty()) return grid;
+//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getBottom, JigsawPiece::getRight, JigsawPiece::getTop);
+        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getBottom, JigsawPiece::getRight, JigsawPiece::getTop, JigsawPiece::getLeft);
+        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getBottom, JigsawPiece::getLeft, JigsawPiece::getTop, JigsawPiece::getRight);
+        if(!grid.isEmpty()) return grid;
+        return new ArrayList<>();
+    }
+
+    public static List<List<JigsawPiece>> completeImage(List<JigsawPiece> corners, List<JigsawPiece> sides, List<JigsawPiece> centers, List<JigsawPiece> pieces
+                    , Direction moveHorizontal, Direction moveVertical, Direction moveReverseHorizontal, Direction moveReverseVerical){
+        JigsawPiece startingCorner = corners.get(0).flippedVertically(); // check all positions
+        for (int rotation = 0; rotation < 4; rotation++) {
+
+            List<List<JigsawPiece>> grid = new ArrayList<>();
+
+            List<JigsawPiece> line = new ArrayList<>();
+            // move horizontally
+            line.add(startingCorner);
+            line.addAll(moveTowardsAndCollect(sides, startingCorner, moveVertical, moveReverseVerical));
+            line.addAll(moveTowardsAndCollect(corners, line.get(line.size()-1), moveVertical, moveReverseVerical));
+
+            if(line.size() != Math.sqrt(pieces.size())){
+                continue;
+//                return new ArrayList<>();
+            }
+
+            // move vertically for
+            // left side
+            JigsawPiece topRowPiece = line.get(0);
+            List<JigsawPiece> vertical = new ArrayList<>();
+            vertical.add(topRowPiece);
+            vertical.addAll(moveTowardsAndCollect(sides, topRowPiece, moveHorizontal, moveReverseHorizontal));
+            vertical.addAll(moveTowardsAndCollect(corners, vertical.get(vertical.size() - 1), moveHorizontal, moveReverseHorizontal));
+            grid.add(vertical);
+
+            if(vertical.size() != line.size()){
+                return new ArrayList<>();
+            }
+            // center
+            for (int i = 1; i < line.size() - 1; i++) {
+                topRowPiece = line.get(i);
+                vertical = new ArrayList<JigsawPiece>();
+                vertical.add(topRowPiece);
+                vertical.addAll(moveTowardsAndCollect(centers, topRowPiece, moveHorizontal, moveReverseHorizontal));
+                vertical.addAll(moveTowardsAndCollect(sides, vertical.get(vertical.size() - 1), moveHorizontal, moveReverseHorizontal));
+                grid.add(vertical);
+            }
+
+            // right side
+            topRowPiece = line.get(line.size() - 1);
+            vertical = new ArrayList<>();
+            vertical.add(topRowPiece);
+            vertical.addAll(moveTowardsAndCollect(sides, topRowPiece, moveHorizontal, moveReverseHorizontal));
+            vertical.addAll(moveTowardsAndCollect(corners, vertical.get(vertical.size() - 1), moveHorizontal, moveReverseHorizontal));
+            grid.add(vertical);
+
+            double length = Math.sqrt(pieces.size());
+            if(grid.size() == length){
+                if (grid.stream().map(List::size).filter(integer -> integer != length).count() == 0){
+                    return grid;
+                }
+            }
+            startingCorner = startingCorner.rotated();
+        }
+        return new ArrayList<>();
+
+    }
+
+    private static List<JigsawPiece> moveTowardsAndCollect(List<JigsawPiece> sides, JigsawPiece startingPiece, Direction pieceSide, Direction nextSide) {
+        List<JigsawPiece> line = new ArrayList<>();
+        Optional<JigsawPiece> nextPiece = findNextPiece(startingPiece, sides, pieceSide, nextSide);
+
+        while(nextPiece.isPresent()){
+            line.add(nextPiece.get());
+//            System.out.println(nextPiece.get());
+            nextPiece = findNextPiece(nextPiece.get(), sides, pieceSide, nextSide);
+        }
+        return line;
+    }
+
+    private static Optional<JigsawPiece> findNextPiece(JigsawPiece piece, List<JigsawPiece> sides, Direction pieceSide, Direction nextSide){
+
+        for (JigsawPiece sidePiece : sides) {
+            if(piece.equals(sidePiece)) continue; // skip self
+            Optional<JigsawPiece> next =
+                            pieceMatching(piece, pieceSide, sidePiece, nextSide);
+            if(next.isPresent()){
+//                System.out.println("Match "+piece.getId()+" with " + next.get().getId());
+                return next;
+            }
+        }
+        return Optional.empty();
+
     }
 }
 
 @FunctionalInterface
-interface getSide {
+interface Direction {
     String getSide(JigsawPiece piece);
 }
 
@@ -112,12 +223,15 @@ class JigsawPiece {
     String left;
     String right;
 
-    public JigsawPiece(Long id, String top, String bottom, String left, String right) {
+    List<String> tile;
+
+    public JigsawPiece(Long id, String top, String bottom, String left, String right, List<String> tile) {
         this.id = id;
         this.top = top;
         this.bottom = bottom;
         this.left = left;
         this.right = right;
+        this.tile = tile;
     }
 
     public JigsawPiece rotated(){
@@ -126,26 +240,28 @@ class JigsawPiece {
                         left,
                         right,
                         bottom,
-                        top
-                        );
+                        top,
+                        rotateTile(tile));
     }
 
-    public JigsawPiece flipped(){
+    public JigsawPiece flippedHorizontlaly(){
         return new JigsawPiece(
                         id,
                         bottom,
                         top,
                         new StringBuilder(left).reverse().toString(),
-                        new StringBuilder(right).reverse().toString());
+                        new StringBuilder(right).reverse().toString(),
+                        flipHorizontallyTile(tile));
     }
 
-    public JigsawPiece flippedReverse(){
+    public JigsawPiece flippedVertically(){
         return new JigsawPiece(
                         id,
                         new StringBuilder(top).reverse().toString(),
                         new StringBuilder(bottom).reverse().toString(),
                         right,
-                        left);
+                        left,
+                        flipVerticallyTile(tile));
     }
 
     @Override
@@ -161,5 +277,39 @@ class JigsawPiece {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        tile.stream().forEach(s -> sb.append(s).append("\n"));
+        return sb.append("\n").toString();
+    }
+
+    private List<String> rotateTile(List<String> tile) {
+        // each horizontal String in list becomes vertical
+        List<String> rotated = new ArrayList<>();
+        for (int i = 0; i < tile.size(); i++) {
+            StringBuilder column = new StringBuilder();
+            for (String row : tile) {
+                column.append(row.charAt(i));
+            }
+            rotated.add(column.toString());
+        }
+        return rotated;
+    }
+
+    private List<String> flipHorizontallyTile(List<String> tile){
+        List<String> flipped = new ArrayList<>();
+        for (String row : tile) {
+            flipped.add(new StringBuilder(row).reverse().toString());
+        }
+
+        return flipped;
+    }
+
+    private List<String> flipVerticallyTile(List<String> tile){
+        Collections.reverse(tile);
+        return tile;
     }
 }
