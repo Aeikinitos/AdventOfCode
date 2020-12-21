@@ -2,10 +2,10 @@ package advent2020.day20;
 
 import lombok.Data;
 
+import java.util.AbstractMap.SimpleEntry;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 /**
  * @author <a href="mailto:sotirakis.lazarou@britebill.com">Sotirakis Lazarou</a>
  */
@@ -91,17 +91,17 @@ public class JurassicJigsaw {
 
     public static List<List<JigsawPiece>> completeImage(List<JigsawPiece> corners, List<JigsawPiece> sides, List<JigsawPiece> centers, List<JigsawPiece> pieces) {
         List<List<JigsawPiece>>
-//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getTop, JigsawPiece::getLeft, JigsawPiece::getBottom);
-//        if(!grid.isEmpty()) return grid;
-//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft, JigsawPiece::getTop);
-//        if(!grid.isEmpty()) return grid;
-//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft);
-//        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getTop, JigsawPiece::getLeft, JigsawPiece::getBottom);
+        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft, JigsawPiece::getTop);
+        if(!grid.isEmpty()) return grid;
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom, JigsawPiece::getLeft);
+        if(!grid.isEmpty()) return grid;
         grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getTop, JigsawPiece::getLeft, JigsawPiece::getBottom, JigsawPiece::getRight);
         if(!grid.isEmpty()) return grid;
-//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom);
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getTop, JigsawPiece::getRight, JigsawPiece::getBottom);
         if(!grid.isEmpty()) return grid;
-//        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getBottom, JigsawPiece::getRight, JigsawPiece::getTop);
+        grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getLeft, JigsawPiece::getBottom, JigsawPiece::getRight, JigsawPiece::getTop);
         if(!grid.isEmpty()) return grid;
         grid = completeImage(corners, sides, centers, pieces, JigsawPiece::getBottom, JigsawPiece::getRight, JigsawPiece::getTop, JigsawPiece::getLeft);
         if(!grid.isEmpty()) return grid;
@@ -112,7 +112,7 @@ public class JurassicJigsaw {
 
     public static List<List<JigsawPiece>> completeImage(List<JigsawPiece> corners, List<JigsawPiece> sides, List<JigsawPiece> centers, List<JigsawPiece> pieces
                     , Direction moveHorizontal, Direction moveVertical, Direction moveReverseHorizontal, Direction moveReverseVerical){
-        JigsawPiece startingCorner = corners.get(0).flippedVertically(); // check all positions
+        JigsawPiece startingCorner = corners.get(0); // I can check all variations flippedHorizontally, flippedVertically as well, but this is faster for this input
         for (int rotation = 0; rotation < 4; rotation++) {
 
             List<List<JigsawPiece>> grid = new ArrayList<>();
@@ -194,7 +194,76 @@ public class JurassicJigsaw {
             }
         }
         return Optional.empty();
+    }
 
+    public static List<String> joinTiles(List<List<JigsawPiece>> image){
+        // Lines < Tiles<> >
+        int tileLength = image.get(0).get(0).tile.size();
+        List<String> completedImage = new ArrayList<>();
+
+        for (int i = image.size() - 1; i >= 0; i--) {
+            List<JigsawPiece> line = image.get(i);
+            for (int internalLineIndex = 1; internalLineIndex < tileLength-1; internalLineIndex++) {
+                StringBuilder internalLine = new StringBuilder();
+                for (JigsawPiece piece : line) {
+                    internalLine.append(piece.tile.get(internalLineIndex), 1, tileLength-1);
+                }
+                completedImage.add(internalLine.append("\n").toString());
+            }
+        }
+
+//        JigsawPiece imageJigsaw = new JigsawPiece(1L, "", "", "", "", completedImage);
+        return completedImage;
+    }
+
+    public static int findMonster(List<String> image){
+        char[][] imageArray = new char[image.size()][];
+        for (int i = 0; i < image.size(); i++) {
+            imageArray[i] = image.get(i).toCharArray();
+        }
+        // relative positions with # to form a monster are (row, column)
+        // (0,18), (1,0), (1,5), (1,6), (1,11), (1,12), (1,17), (1,18), (1,19), (2,1), (2,4), (2,7), (2,10), (2,13), (2,16)
+
+        //             1
+        //   01234567890123456789
+        //0                    #
+        //1  #    ##    ##    ###
+        //2   #  #  #  #  #  #
+
+        int countMonsters = 0;
+        for (int i = 0; i < image.size() - 3 +1; i++) {
+            for (int j = 0; j < image.get(i).length() - 20 +1; j++) {
+                if(hereLiesMonster(i,j,imageArray)){
+                   countMonsters++;
+                }
+            }
+        }
+        return countMonsters;
+    }
+
+    private static List<SimpleEntry<Integer, Integer>> relativeMonsterPosittions =
+                    Arrays.asList(
+                                    new SimpleEntry<>(0, 18),
+                                    new SimpleEntry<>(1, 0),
+                                    new SimpleEntry<>(1, 5),
+                                    new SimpleEntry<>(1, 6),
+                                    new SimpleEntry<>(1, 11),
+                                    new SimpleEntry<>(1, 12),
+                                    new SimpleEntry<>(1, 17),
+                                    new SimpleEntry<>(1, 18),
+                                    new SimpleEntry<>(1, 19),
+                                    new SimpleEntry<>(2, 1),
+                                    new SimpleEntry<>(2, 4),
+                                    new SimpleEntry<>(2, 7),
+                                    new SimpleEntry<>(2, 10),
+                                    new SimpleEntry<>(2, 13),
+                                    new SimpleEntry<>(2, 16)
+                    );
+    private static boolean hereLiesMonster(int x, int y, char[][] imageArray){
+        return relativeMonsterPosittions.stream()
+                                        .filter(simpleEntry ->
+                        imageArray[simpleEntry.getKey()+x][simpleEntry.getValue()+y] == '#')
+                                        .count() == 15;
     }
 }
 
@@ -237,31 +306,31 @@ class JigsawPiece {
     public JigsawPiece rotated(){
         return new JigsawPiece(
                         id,
-                        left,
-                        right,
+                        new StringBuilder(left).reverse().toString(),
+                        new StringBuilder(right).reverse().toString(),
                         bottom,
                         top,
                         rotateTile(tile));
     }
 
-    public JigsawPiece flippedHorizontlaly(){
+    public JigsawPiece flippedVertically(){
         return new JigsawPiece(
                         id,
                         bottom,
                         top,
                         new StringBuilder(left).reverse().toString(),
                         new StringBuilder(right).reverse().toString(),
-                        flipHorizontallyTile(tile));
+                        flipVerticallyTile(tile));
     }
 
-    public JigsawPiece flippedVertically(){
+    public JigsawPiece flippedHorizontlaly(){
         return new JigsawPiece(
                         id,
                         new StringBuilder(top).reverse().toString(),
                         new StringBuilder(bottom).reverse().toString(),
                         right,
                         left,
-                        flipVerticallyTile(tile));
+                        flipHorizontallyTile(tile));
     }
 
     @Override
@@ -286,7 +355,7 @@ class JigsawPiece {
         return sb.append("\n").toString();
     }
 
-    private List<String> rotateTile(List<String> tile) {
+    public List<String> rotateTile(List<String> tile) {
         // each horizontal String in list becomes vertical
         List<String> rotated = new ArrayList<>();
         for (int i = 0; i < tile.size(); i++) {
@@ -294,12 +363,12 @@ class JigsawPiece {
             for (String row : tile) {
                 column.append(row.charAt(i));
             }
-            rotated.add(column.toString());
+            rotated.add(column.reverse().toString());
         }
         return rotated;
     }
 
-    private List<String> flipHorizontallyTile(List<String> tile){
+    public List<String> flipHorizontallyTile(List<String> tile){
         List<String> flipped = new ArrayList<>();
         for (String row : tile) {
             flipped.add(new StringBuilder(row).reverse().toString());
@@ -308,8 +377,9 @@ class JigsawPiece {
         return flipped;
     }
 
-    private List<String> flipVerticallyTile(List<String> tile){
-        Collections.reverse(tile);
-        return tile;
+    public List<String> flipVerticallyTile(List<String> tile){
+        ArrayList<String> flippedVertically = new ArrayList<>(tile);
+        Collections.reverse(flippedVertically);
+        return flippedVertically;
     }
 }

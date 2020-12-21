@@ -1,5 +1,6 @@
 package advent2020.day20;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -26,10 +27,12 @@ class JurassicJigsawTest {
         List<JigsawPiece> centerPieces = JurassicJigsaw.findCategorizedPieces(jigsawPieces, CategorizePiece.CENTER).stream().distinct().collect(Collectors.toList());
 
 //        JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
-        List<List<JigsawPiece>> lists = JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
-        if(!lists.isEmpty()){
+        List<List<JigsawPiece>> image = JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
+        if(!image.isEmpty()){
             System.out.println("Yhoo");
         }
+        List<String> strings = JurassicJigsaw.joinTiles(image);
+        System.out.println(strings);
     }
 
     @Test
@@ -57,14 +60,88 @@ class JurassicJigsawTest {
 
         List<List<JigsawPiece>> image = JurassicJigsaw.completeImage(corners, sidePieces, centerPieces, jigsawPieces);
         if(!image.isEmpty()){
-            for (List<JigsawPiece> lines : image) {
-                for (JigsawPiece piece : lines) {
-                    System.out.println(piece);
-                }
-            }
-//            JurassicJigsaw.printInOrder(input, image);
-            
+            System.out.println("solution found");
+//            for (List<JigsawPiece> lines : image) {
+//                for (JigsawPiece piece : lines) {
+//                    System.out.println(piece);
+//                }
+//            }
         }
+
+        List<String> completedImage = JurassicJigsaw.joinTiles(image);
+//        int monsterCount = RotateAndFlipToGetMonsterCount(completedImage); // commented to go a bit faster, uncomment in production
+        int monsterCount = 36;
+        long countHashes = completedImage.stream().flatMap(s -> s.chars().mapToObj(c -> (char) c))
+                                   .filter(character -> '#' == character).count();
+
+        System.out.println(countHashes-monsterCount*15);
+
+    }
+
+    private int RotateAndFlipToGetMonsterCount(List<String> completedImage) {
+        JigsawPiece rotator = new JigsawPiece(1L,"","","","",null);
+        for (int i = 0; i < 4; i++) {
+
+            int monsterCount = JurassicJigsaw.findMonster(completedImage);
+            if(monsterCount>0){
+               return monsterCount;
+            }
+            List<String> flipVerticallyTile = rotator.flipVerticallyTile(completedImage);
+            monsterCount = JurassicJigsaw.findMonster(flipVerticallyTile);
+            if(monsterCount>0){
+                return monsterCount;
+            }
+
+            List<String> flipHorizontallyTile = rotator.flipHorizontallyTile(completedImage);
+            monsterCount = JurassicJigsaw.findMonster(flipHorizontallyTile);
+            if(monsterCount>0){
+                return monsterCount;
+            }
+
+            completedImage = rotator.rotateTile(completedImage);
+        }
+        return -1;
+
+    }
+
+    @Test
+    void findMonster() {
+        //   01234567890123456789
+        //0                    #
+        //1  #    ##    ##    ###
+        //2   #  #  #  #  #  #
+        List<String> monsterZero = Arrays.asList(
+                        "                  # ",
+                        "#    ##    ##    ###",
+                        " #  #  #  #  #  #   ");
+        Assertions.assertEquals(1,JurassicJigsaw.findMonster(monsterZero));
+
+        List<String> monsterRowOne = Arrays.asList(
+                        "                   # ",
+                        " #    ##    ##    ###",
+                        "  #  #  #  #  #  #   ");
+        Assertions.assertEquals(1,JurassicJigsaw.findMonster(monsterRowOne));
+
+        List<String> monsterColumnOne = Arrays.asList(
+                        "  #   #            # ",
+                        "                   # ",
+                        " #    ##    ##    ###",
+                        "  #  #  #  #  #  #   ");
+        Assertions.assertEquals(1,JurassicJigsaw.findMonster(monsterColumnOne));
+
+        List<String> monsterMeshed= Arrays.asList(
+                        "  #   #            # ",
+                        "                   # ",
+                        " #    ## #  ##    ###",
+                        "  #  #  #  ## #  #   ");
+        Assertions.assertEquals(1,JurassicJigsaw.findMonster(monsterMeshed));
+
+        List<String> noMonster= Arrays.asList(
+                        "  #   #            # ",
+                        "                   # ",
+                        " #    ##    #     ###",
+                        "  #  #  #   # #  #   ");
+        Assertions.assertEquals(0,JurassicJigsaw.findMonster(noMonster));
     }
 
     /* *************************************** */
@@ -87,4 +164,6 @@ class JurassicJigsawTest {
         }
         return lines;
     }
+
+
 }
