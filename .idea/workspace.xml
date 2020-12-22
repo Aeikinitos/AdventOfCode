@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day21/AllergenAssessment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day21/AllergenAssessmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day21/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day21/sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2020/day22/CrabCombatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day22/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2020/day22/sample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day21/AllergenAssessment.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="428">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,28 +37,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day21/input">
+        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day22/CrabCombatTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="45" column="530" selection-start-line="45" selection-start-column="530" selection-end-line="45" selection-end-column="530" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day21/AllergenAssessmentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day21/sample">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            <state relative-caret-position="405">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>8: 42</find>
       <find>14:</find>
       <find>//</find>
       <find>Coordinates3D</find>
@@ -108,6 +92,7 @@
       <find>c -&gt;</find>
       <find>reduce</find>
       <find>computeIfAbsent</find>
+      <find>Queue</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;,</replace>
@@ -128,6 +113,7 @@
       <replace>moveReverseVerical</replace>
       <replace>nextPiece.get()</replace>
       <replace>grid = completeImage(corners, sides, centers, pieces,</replace>
+      <replace>LinkedList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -137,10 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/advent2020/day11/Count.java" />
-        <option value="$PROJECT_DIR$/src/test/java/advent2020/day11/Adjucent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day11/Count.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advent2020/day11/Decider.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day11/Adjucent.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day11/SeatingSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day11/Visible.java" />
@@ -188,14 +170,18 @@
         <option value="$PROJECT_DIR$/src/test/resources/advent2020/day21/input" />
         <option value="$PROJECT_DIR$/src/main/java/advent2020/day21/AllergenAssessment.java" />
         <option value="$PROJECT_DIR$/src/test/java/advent2020/day21/AllergenAssessmentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day22/sample" />
+        <option value="$PROJECT_DIR$/src/test/resources/advent2020/day22/input" />
+        <option value="$PROJECT_DIR$/src/test/java/advent2020/day22/CrabCombatTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1056" />
+    <option name="x" value="221" />
+    <option name="y" value="-11" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,16 +230,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day14" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventOfCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day21" type="462c0819:PsiDirectoryNode" />
+              <item name="day22" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdventOfCode" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +287,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="advent2020" type="462c0819:PsiDirectoryNode" />
-              <item name="day21" type="462c0819:PsiDirectoryNode" />
+              <item name="day22" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,11 +317,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2020.day22" />
       <recent name="advent2020.day21" />
       <recent name="advent2020.day20" />
       <recent name="advent2020.day17" />
       <recent name="advent2020.day19" />
-      <recent name="advent2020.day18" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -383,7 +360,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllergenAssessmentTest.part2">
+  <component name="RunManager" selected="JUnit.CrabCombatTest.part2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -392,40 +369,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllergenAssessmentTest.parseRawInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day21.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day21" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day21.AllergenAssessmentTest" />
-      <option name="METHOD_NAME" value="parseRawInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllergenAssessmentTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2020.day21.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day21" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day21.AllergenAssessmentTest" />
-      <option name="METHOD_NAME" value="part1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -447,34 +390,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllergenAssessmentTest.samplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrabCombatTest.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day21.*" />
+          <option name="PATTERN" value="advent2020.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day21" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day21.AllergenAssessmentTest" />
-      <option name="METHOD_NAME" value="samplePart2" />
+      <option name="PACKAGE_NAME" value="advent2020.day22" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day22.CrabCombatTest" />
+      <option name="METHOD_NAME" value="part1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JurassicJigsawTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrabCombatTest.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2020.day20.*" />
+          <option name="PATTERN" value="advent2020.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2020.day20" />
-      <option name="MAIN_CLASS_NAME" value="advent2020.day20.JurassicJigsawTest" />
+      <option name="PACKAGE_NAME" value="advent2020.day22" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day22.CrabCombatTest" />
       <option name="METHOD_NAME" value="part2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrabCombatTest.playGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day22" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day22.CrabCombatTest" />
+      <option name="METHOD_NAME" value="playGame" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrabCombatTest.playRecursiveCombat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2020.day22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2020.day22" />
+      <option name="MAIN_CLASS_NAME" value="advent2020.day22.CrabCombatTest" />
+      <option name="METHOD_NAME" value="playRecursiveCombat" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -508,11 +485,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrabCombatTest.part2" />
+        <item itemvalue="JUnit.CrabCombatTest.playRecursiveCombat" />
+        <item itemvalue="JUnit.CrabCombatTest.part1" />
+        <item itemvalue="JUnit.CrabCombatTest.playGame" />
         <item itemvalue="JUnit.AllergenAssessmentTest.part2" />
-        <item itemvalue="JUnit.AllergenAssessmentTest.samplePart2" />
-        <item itemvalue="JUnit.AllergenAssessmentTest.part1" />
-        <item itemvalue="JUnit.AllergenAssessmentTest.parseRawInput" />
-        <item itemvalue="JUnit.JurassicJigsawTest.part2" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +516,7 @@
       <workItem from="1607582622718" duration="12774000" />
       <workItem from="1607672102080" duration="43849000" />
       <workItem from="1608017581700" duration="4216000" />
-      <workItem from="1608117014694" duration="114233000" />
+      <workItem from="1608117014694" duration="122966000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -709,43 +686,50 @@
       <option name="project" value="LOCAL" />
       <updated>1608537463093</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2020.day21">
+      <created>1608568616421</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608568616421</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllergenAssessmentTest_parseRawInput - 2020.12.21 at 18h 15m 32s.xml">
-      <configuration name="AllergenAssessmentTest.parseRawInput" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_part2 - 2020.12.22 at 11h 06m 13s.xml">
+      <configuration name="CrabCombatTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_parseRawInput - 2020.12.21 at 18h 17m 44s.xml">
-      <configuration name="AllergenAssessmentTest.parseRawInput" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_playRecursiveCombat - 2020.12.22 at 11h 12m 50s.xml">
+      <configuration name="CrabCombatTest.playRecursiveCombat" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_parseRawInput - 2020.12.21 at 18h 23m 27s.xml">
-      <configuration name="AllergenAssessmentTest.parseRawInput" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_part2 - 2020.12.22 at 11h 12m 53s.xml">
+      <configuration name="CrabCombatTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_parseRawInput - 2020.12.21 at 18h 25m 26s.xml">
-      <configuration name="AllergenAssessmentTest.parseRawInput" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_playRecursiveCombat - 2020.12.22 at 11h 59m 49s.xml">
+      <configuration name="CrabCombatTest.playRecursiveCombat" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_parseRawInput - 2020.12.21 at 18h 25m 32s.xml">
-      <configuration name="AllergenAssessmentTest.parseRawInput" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_playRecursiveCombat - 2020.12.22 at 12h 09m 21s.xml">
+      <configuration name="CrabCombatTest.playRecursiveCombat" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_part1 - 2020.12.21 at 18h 26m 40s.xml">
-      <configuration name="AllergenAssessmentTest.part1" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_part2 - 2020.12.22 at 12h 09m 51s.xml">
+      <configuration name="CrabCombatTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_samplePart2 - 2020.12.21 at 18h 33m 55s.xml">
-      <configuration name="AllergenAssessmentTest.samplePart2" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_part2 - 2020.12.22 at 12h 10m 44s.xml">
+      <configuration name="CrabCombatTest.part2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_samplePart2 - 2020.12.21 at 18h 34m 34s.xml">
-      <configuration name="AllergenAssessmentTest.samplePart2" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_playRecursiveCombat - 2020.12.22 at 12h 13m 11s.xml">
+      <configuration name="CrabCombatTest.playRecursiveCombat" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_samplePart2 - 2020.12.21 at 18h 35m 23s.xml">
-      <configuration name="AllergenAssessmentTest.samplePart2" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_playRecursiveCombat - 2020.12.22 at 12h 13m 27s.xml">
+      <configuration name="CrabCombatTest.playRecursiveCombat" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllergenAssessmentTest_part2 - 2020.12.21 at 18h 35m 43s.xml">
-      <configuration name="AllergenAssessmentTest.part2" configurationId="JUnit" />
+    <history-entry file="CrabCombatTest_part2 - 2020.12.22 at 12h 13m 38s.xml">
+      <configuration name="CrabCombatTest.part2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278208000" />
+    <option name="totallyTimeSpent" value="286941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,7 +744,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14712153" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.081023455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -769,8 +753,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34555554" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31777778" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35777777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -792,6 +776,39 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.081023455" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31777778" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35777777" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Application Servers" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -821,7 +838,8 @@
     <MESSAGE value="2020.day20.part1" />
     <MESSAGE value="2020.day20.part2.incomplete" />
     <MESSAGE value="2020.day20.part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.day20.part2" />
+    <MESSAGE value="2020.day21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.day21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -985,13 +1003,26 @@
           <properties />
           <option name="timeStamp" value="349" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/advent2020/day22/CrabCombatTest.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="mapping.get(allergen)" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AdventOfCode$ShuttleSearchTest_sample2Combo.ic" NAME="ShuttleSearchTest.sample2Combo Coverage Results" MODIFIED="1607891152801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -1137,37 +1168,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="486" column="36" selection-start-line="486" selection-start-column="36" selection-end-line="486" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day13/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day13/ShuttleSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1279,13 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="354" column="31" selection-start-line="354" selection-start-column="31" selection-end-line="354" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="588" selection-start-line="588" selection-end-line="588" />
         </state>
       </provider>
     </entry>
@@ -1525,17 +1518,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day21/AllergenAssessmentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day21/AllergenAssessment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+        <state relative-caret-position="264">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day21/AllergenAssessment.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day22/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="541">
+          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day21/AllergenAssessmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="52" column="82" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/advent2020/day22/sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_212/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="1585" column="23" selection-start-line="1585" selection-start-column="23" selection-end-line="1585" selection-end-column="23" />
+          <folding>
+            <element signature="e#60416#60417#0" expanded="true" />
+            <element signature="e#60444#60445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/advent2020/day22/CrabCombatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/advent2020/day22/CrabCombat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
