@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day2/Part1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day2/Part2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2020/day2/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day1/SonarSweep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day1/SonarSweepTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/common/InputParsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2021/day1/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day3/BinaryDiagnostic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day3/BinaryDiagnosticTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2021/day3/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/advent2020/day1/ReportRepairTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2020/day1/ReportRepairTest.java" afterDir="false" />
     </list>
+    <list id="12bfced1-fc63-42ab-9331-da92063aa40b" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +28,8 @@
         <option value="JUnit4 Test Class" />
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -556,7 +551,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/advent2020/day12" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/advent2021/day1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/advent2021/day3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -568,11 +563,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2021\day3" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2021\day1" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\main\java\advent2020\day17" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020\day19" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\main\java\advent2020\day18" />
-      <recent name="C:\Dev\Generic\adventofcode\src\test" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -589,11 +584,11 @@
       <recent name="advent2020.day7" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2021.day3" />
       <recent name="advent2021.day1" />
       <recent name="advent2020.day25" />
       <recent name="advent2020.day24" />
       <recent name="advent2020.day23" />
-      <recent name="advent2020.day22" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day23" />
@@ -602,7 +597,7 @@
       <recent name="advent2020.day8" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SonarSweepTest">
+  <component name="RunManager" selected="JUnit.BinaryDiagnosticTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -628,84 +623,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SonarSweepTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryDiagnosticTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day1.*" />
+          <option name="PATTERN" value="advent2021.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day1" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day1.SonarSweepTest" />
+      <option name="PACKAGE_NAME" value="advent2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day3.BinaryDiagnosticTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SonarSweepTest.calculateIncrements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryDiagnosticTest.getCO2RatingSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day1.*" />
+          <option name="PATTERN" value="advent2021.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day1" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day1.SonarSweepTest" />
-      <option name="METHOD_NAME" value="calculateIncrements" />
+      <option name="PACKAGE_NAME" value="advent2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day3.BinaryDiagnosticTest" />
+      <option name="METHOD_NAME" value="getCO2RatingSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SonarSweepTest.calculateIncrementsSlidingWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryDiagnosticTest.getLifeSupportRatingPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day1.*" />
+          <option name="PATTERN" value="advent2021.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day1" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day1.SonarSweepTest" />
-      <option name="METHOD_NAME" value="calculateIncrementsSlidingWindow" />
+      <option name="PACKAGE_NAME" value="advent2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day3.BinaryDiagnosticTest" />
+      <option name="METHOD_NAME" value="getLifeSupportRatingPart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SonarSweepTest.calculateIncrementsSlidingWindowWithInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryDiagnosticTest.getLifeSupportRatingSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day1.*" />
+          <option name="PATTERN" value="advent2021.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day1" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day1.SonarSweepTest" />
-      <option name="METHOD_NAME" value="calculateIncrementsSlidingWindowWithInput" />
+      <option name="PACKAGE_NAME" value="advent2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day3.BinaryDiagnosticTest" />
+      <option name="METHOD_NAME" value="getLifeSupportRatingSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SonarSweepTest.calculateIncrementsWithInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryDiagnosticTest.getOxygenRatingSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day1.*" />
+          <option name="PATTERN" value="advent2021.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day1" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day1.SonarSweepTest" />
-      <option name="METHOD_NAME" value="calculateIncrementsWithInput" />
+      <option name="PACKAGE_NAME" value="advent2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day3.BinaryDiagnosticTest" />
+      <option name="METHOD_NAME" value="getOxygenRatingSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -739,11 +734,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SonarSweepTest" />
-        <item itemvalue="JUnit.SonarSweepTest.calculateIncrementsSlidingWindowWithInput" />
-        <item itemvalue="JUnit.SonarSweepTest.calculateIncrementsSlidingWindow" />
-        <item itemvalue="JUnit.SonarSweepTest.calculateIncrements" />
-        <item itemvalue="JUnit.SonarSweepTest.calculateIncrementsWithInput" />
+        <item itemvalue="JUnit.BinaryDiagnosticTest" />
+        <item itemvalue="JUnit.BinaryDiagnosticTest.getLifeSupportRatingSamplePart2" />
+        <item itemvalue="JUnit.BinaryDiagnosticTest.getLifeSupportRatingPart2" />
+        <item itemvalue="JUnit.BinaryDiagnosticTest.getCO2RatingSamplePart2" />
+        <item itemvalue="JUnit.BinaryDiagnosticTest.getOxygenRatingSamplePart2" />
       </list>
     </recent_temporary>
   </component>
@@ -790,6 +785,7 @@
       <workItem from="1615137889725" duration="4015000" />
       <workItem from="1629100187416" duration="960000" />
       <workItem from="1638352479444" duration="4607000" />
+      <workItem from="1638561562310" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -1194,6 +1190,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/advent2020/day24/LobbyLayoutTest.java</url>
           <line>152</line>
           <option name="timeStamp" value="388" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2021/day3/BinaryDiagnostic.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="396" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2021/day3/BinaryDiagnostic.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="397" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
