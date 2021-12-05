@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="2021.day4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day4/GiantSquid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day4/GiantSquidTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2021/day4/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2021/day4/sampleInput" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day5/HydrothermalVenture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day5/HydrothermalVentureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/advent2021/day5/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="12bfced1-fc63-42ab-9331-da92063aa40b" name="Ignore" comment="" />
@@ -574,6 +573,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2021\day5" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\bin" />
       <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2020" />
       <recent name="C:\Dev\Generic\adventofcode\src\test\resources\advent2020\day1" />
@@ -585,11 +585,11 @@
       <recent name="advent2020.day7" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2021.day5" />
       <recent name="advent2021.day4" />
       <recent name="advent2021.day3" />
       <recent name="advent2021.day1" />
       <recent name="advent2020.day25" />
-      <recent name="advent2020.day24" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day23" />
@@ -598,7 +598,7 @@
       <recent name="advent2020.day8" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GiantSquidTest">
+  <component name="RunManager" selected="JUnit.HydrothermalVentureTest.processPart2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -624,84 +624,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiantSquidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HydrothermalVentureTest.process" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day4.*" />
+          <option name="PATTERN" value="advent2021.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day4.GiantSquidTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GiantSquidTest.calculateScorePart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2021.day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day4.GiantSquidTest" />
-      <option name="METHOD_NAME" value="calculateScorePart1" />
+      <option name="PACKAGE_NAME" value="advent2021.day5" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
+      <option name="METHOD_NAME" value="process" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiantSquidTest.calculateScorePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HydrothermalVentureTest.processPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day4.*" />
+          <option name="PATTERN" value="advent2021.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day4.GiantSquidTest" />
-      <option name="METHOD_NAME" value="calculateScorePart2" />
+      <option name="PACKAGE_NAME" value="advent2021.day5" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
+      <option name="METHOD_NAME" value="processPart1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiantSquidTest.calculateScoreSamplePart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HydrothermalVentureTest.processPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day4.*" />
+          <option name="PATTERN" value="advent2021.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day4.GiantSquidTest" />
-      <option name="METHOD_NAME" value="calculateScoreSamplePart1" />
+      <option name="PACKAGE_NAME" value="advent2021.day5" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
+      <option name="METHOD_NAME" value="processPart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiantSquidTest.calculateScoreSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HydrothermalVentureTest.processSamplePart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day4.*" />
+          <option name="PATTERN" value="advent2021.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day4.GiantSquidTest" />
-      <option name="METHOD_NAME" value="calculateScoreSamplePart2" />
+      <option name="PACKAGE_NAME" value="advent2021.day5" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
+      <option name="METHOD_NAME" value="processSamplePart1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HydrothermalVentureTest.processSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2021.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2021.day5" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
+      <option name="METHOD_NAME" value="processSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -735,11 +736,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GiantSquidTest" />
-        <item itemvalue="JUnit.GiantSquidTest.calculateScorePart2" />
-        <item itemvalue="JUnit.GiantSquidTest.calculateScoreSamplePart2" />
-        <item itemvalue="JUnit.GiantSquidTest.calculateScorePart1" />
-        <item itemvalue="JUnit.GiantSquidTest.calculateScoreSamplePart1" />
+        <item itemvalue="JUnit.HydrothermalVentureTest.processPart2" />
+        <item itemvalue="JUnit.HydrothermalVentureTest.processSamplePart2" />
+        <item itemvalue="JUnit.HydrothermalVentureTest.processPart1" />
+        <item itemvalue="JUnit.HydrothermalVentureTest.processSamplePart1" />
+        <item itemvalue="JUnit.HydrothermalVentureTest.process" />
       </list>
     </recent_temporary>
   </component>
@@ -786,7 +787,7 @@
       <workItem from="1615137889725" duration="4015000" />
       <workItem from="1629100187416" duration="960000" />
       <workItem from="1638352479444" duration="4607000" />
-      <workItem from="1638561562310" duration="21618000" />
+      <workItem from="1638561562310" duration="27786000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -1005,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638609083429</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2021.day4">
+      <created>1638643685357</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1638643685357</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1138,7 +1146,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2020.day8.part1" />
     <MESSAGE value="2020.day8.part2" />
     <MESSAGE value="2020.day9" />
     <MESSAGE value="2020.day10" />
@@ -1163,7 +1170,8 @@
     <MESSAGE value="2020.day24" />
     <MESSAGE value="2020.day25" />
     <MESSAGE value="2021.day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.day3" />
+    <MESSAGE value="2021.day4" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.day4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,7 +1180,7 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="26" />
         </breakpoint>
-        <breakpoint type="java-exception">
+        <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="81" />
         </breakpoint>
@@ -1236,12 +1244,23 @@
           <line>31</line>
           <option name="timeStamp" value="422" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2021/day5/HydrothermalVenture.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/advent2021/day5/HydrothermalVenture.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="line" />
-        <watch expression="column" />
+        <watch expression="x1 - i * dirX" language="JAVA" />
+        <watch expression="y1 - i * dirY" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
