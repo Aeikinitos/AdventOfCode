@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day5/Lanternfish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day5/LanternfishTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/advent2021/day5/Lanternfish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2021/day6/Lanternfish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/advent2021/day5/LanternfishTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2021/day6/LanternfishTest.java" afterDir="false" />
     </list>
     <list id="12bfced1-fc63-42ab-9331-da92063aa40b" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -549,7 +549,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/advent2021/day5" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/advent2021" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/advent2021/day3" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -785,7 +785,7 @@
       <workItem from="1615137889725" duration="4015000" />
       <workItem from="1629100187416" duration="960000" />
       <workItem from="1638352479444" duration="4607000" />
-      <workItem from="1638561562310" duration="31715000" />
+      <workItem from="1638561562310" duration="31883000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -1018,7 +1018,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638687808772</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="2021.day6">
+      <created>1638786030178</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1638786030178</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1151,7 +1158,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2020.day9" />
     <MESSAGE value="2020.day10" />
     <MESSAGE value="2020.day10.generic calculation" />
     <MESSAGE value="2020.day11" />
@@ -1176,7 +1182,8 @@
     <MESSAGE value="2021.day3" />
     <MESSAGE value="2021.day4" />
     <MESSAGE value="2021.day5" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.day5" />
+    <MESSAGE value="2021.day6" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021.day6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

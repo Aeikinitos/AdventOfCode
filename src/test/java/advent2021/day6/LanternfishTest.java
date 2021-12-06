@@ -1,4 +1,4 @@
-package advent2021.day5;
+package advent2021.day6;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
