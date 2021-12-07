@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day7/TheTreacheryofWhales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day7/TheTreacheryofWhalesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/advent2021/day5/Lanternfish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/advent2021/day6/Lanternfish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/advent2021/day5/LanternfishTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/advent2021/day6/LanternfishTest.java" afterDir="false" />
     </list>
     <list id="12bfced1-fc63-42ab-9331-da92063aa40b" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -584,11 +584,11 @@
       <recent name="advent2020.day7" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="advent2021.day6" />
       <recent name="advent2021.day5" />
       <recent name="advent2021.day4" />
       <recent name="advent2021.day3" />
       <recent name="advent2021.day1" />
-      <recent name="advent2020.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="advent2020.day23" />
@@ -597,7 +597,7 @@
       <recent name="advent2020.day8" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LanternfishTest">
+  <component name="RunManager" selected="JUnit.TheTreacheryofWhalesTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -623,84 +623,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HydrothermalVentureTest.processPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheTreacheryofWhalesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day5.*" />
+          <option name="PATTERN" value="advent2021.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day5" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
-      <option name="METHOD_NAME" value="processPart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HydrothermalVentureTest.processSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2021.day5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day5" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day5.HydrothermalVentureTest" />
-      <option name="METHOD_NAME" value="processSamplePart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LanternfishTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2021.day5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day5" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day5.LanternfishTest" />
+      <option name="PACKAGE_NAME" value="advent2021.day7" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day7.TheTreacheryofWhalesTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LanternfishTest.calculatePopulationPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheTreacheryofWhalesTest.calculateIncrementalFuelPart2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day5.*" />
+          <option name="PATTERN" value="advent2021.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day5" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day5.LanternfishTest" />
-      <option name="METHOD_NAME" value="calculatePopulationPart1" />
+      <option name="PACKAGE_NAME" value="advent2021.day7" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day7.TheTreacheryofWhalesTest" />
+      <option name="METHOD_NAME" value="calculateIncrementalFuelPart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LanternfishTest.calculatePopulationSample1256aysPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheTreacheryofWhalesTest.calculateIncrementalFuelPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advent2021.day5.*" />
+          <option name="PATTERN" value="advent2021.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day5" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day5.LanternfishTest" />
-      <option name="METHOD_NAME" value="calculatePopulationSample1256aysPart2" />
+      <option name="PACKAGE_NAME" value="advent2021.day6" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day6.TheTreacheryofWhalesTest" />
+      <option name="METHOD_NAME" value="calculateIncrementalFuelPart2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2021.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2021.day7" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day7.TheTreacheryofWhalesTest" />
+      <option name="METHOD_NAME" value="calculateIncrementalFuelSamplePart2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="advent2021.day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="advent2021.day6" />
+      <option name="MAIN_CLASS_NAME" value="advent2021.day6.TheTreacheryofWhalesTest" />
+      <option name="METHOD_NAME" value="calculateIncrementalFuelSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -734,11 +734,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LanternfishTest" />
-        <item itemvalue="JUnit.LanternfishTest.calculatePopulationSample1256aysPart2" />
-        <item itemvalue="JUnit.LanternfishTest.calculatePopulationPart1" />
-        <item itemvalue="JUnit.HydrothermalVentureTest.processPart2" />
-        <item itemvalue="JUnit.HydrothermalVentureTest.processSamplePart2" />
+        <item itemvalue="JUnit.TheTreacheryofWhalesTest" />
+        <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelPart2 (1)" />
+        <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2 (1)" />
+        <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelPart2" />
+        <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2" />
       </list>
     </recent_temporary>
   </component>
@@ -785,7 +785,7 @@
       <workItem from="1615137889725" duration="4015000" />
       <workItem from="1629100187416" duration="960000" />
       <workItem from="1638352479444" duration="4607000" />
-      <workItem from="1638561562310" duration="31883000" />
+      <workItem from="1638561562310" duration="48397000" />
     </task>
     <task id="LOCAL-00001" summary="2020.day2">
       <created>1606911241147</created>
@@ -1025,7 +1025,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638786030178</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="2021.day6">
+      <created>1638786192396</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1638786192396</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
