@@ -43,7 +43,7 @@ fn main() {
         total_points += shape_points[player2];
     });
 
-    println!("total points: {total_points}", );
+    println!("Part 1: {total_points}" );
 
     total_points = 0;
     contents.split('\n').for_each(|item| {
@@ -57,7 +57,7 @@ fn main() {
         total_points += shape_points[choosen_shape];
     });
 
-    println!("total points: {total_points}", );
+    println!("Part 2: {total_points}");
 }
 
 fn get_tuple(item: &str) -> (Shapes, Shapes) {
