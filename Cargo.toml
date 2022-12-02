@@ -15,5 +15,5 @@ modular = "1.0.0"
 
 
 [[bin]]
-name = "day02"
+name = "2022-day02"
 path = "src/main/rust/advent2022/day02.rs"
