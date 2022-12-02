@@ -1,0 +1,19 @@
+[package]
+name = "AOC22"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+enum-map = "2.4.1"
+strum = "0.24"
+strum_macros = "0.24"
+itertools = "0.10.5"
+modular = "1.0.0"
+
+
+[[bin]]
+name = "day02"
+path = "src/main/rust/advent2022/day02.rs"
