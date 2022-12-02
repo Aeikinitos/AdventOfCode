@@ -3,11 +3,18 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advent2021/day7/TheTreacheryofWhales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/advent2021/day7/TheTreacheryofWhalesTest.java" afterDir="false" />
+    <list default="true" id="4d69505e-9da4-454a-8347-a8499d8a3d15" name="Default Changelist" comment="merge main and master">
+      <change afterPath="$PROJECT_DIR$/inputs/advent2022/day01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/advent2022/day02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/rust/advent2022/day02.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <list id="12bfced1-fc63-42ab-9331-da92063aa40b" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -540,26 +547,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/advent2021" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/advent2021/day3" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.46896553" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Dev\Generic\AdventOfCode\src\test\resources\advent2021\day3" />
@@ -597,15 +590,9 @@
       <recent name="advent2020.day8" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TheTreacheryofWhalesTest">
+  <component name="RunManager" selected="Cargo.Run day02">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -621,6 +608,29 @@
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run day02" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package AOC22 --bin day02" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <configuration name="TheTreacheryofWhalesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -690,23 +700,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="advent2021.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="advent2021.day6" />
-      <option name="MAIN_CLASS_NAME" value="advent2021.day6.TheTreacheryofWhalesTest" />
-      <option name="METHOD_NAME" value="calculateIncrementalFuelSamplePart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -734,16 +727,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run day02" />
         <item itemvalue="JUnit.TheTreacheryofWhalesTest" />
         <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelPart2 (1)" />
         <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2 (1)" />
         <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelPart2" />
-        <item itemvalue="JUnit.TheTreacheryofWhalesTest.calculateIncrementalFuelSamplePart2" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
-    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
     <option name="version" value="2" />
   </component>
@@ -1165,7 +1157,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2020.day10" />
     <MESSAGE value="2020.day10.generic calculation" />
     <MESSAGE value="2020.day11" />
     <MESSAGE value="2020.day12" />
@@ -1190,7 +1181,8 @@
     <MESSAGE value="2021.day4" />
     <MESSAGE value="2021.day5" />
     <MESSAGE value="2021.day6" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021.day6" />
+    <MESSAGE value="merge main and master" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge main and master" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,14 +1280,14 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AdventOfCode$ComboBreakerTest_findSecretLoopSize.ic" NAME="ComboBreakerTest.findSecretLoopSize Coverage Results" MODIFIED="1608877035697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>advent2020.day25.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/AdventOfCode$ShuttleSearchTest_sample2Combo.ic" NAME="ShuttleSearchTest.sample2Combo Coverage Results" MODIFIED="1607891152801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>advent2020.day13.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/AdventOfCode$GiantSquidTest_parseBoards.ic" NAME="GiantSquidTest.parseBoards Coverage Results" MODIFIED="1638633145153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>advent2021.day4.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/AdventOfCode$ComboBreakerTest_findSecretLoopSize.ic" NAME="ComboBreakerTest.findSecretLoopSize Coverage Results" MODIFIED="1608877035697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>advent2020.day25.*</FILTER>
     </SUITE>
   </component>
   <component name="debuggerHistoryManager">
