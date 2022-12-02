@@ -21,7 +21,7 @@ enum Shapes {
 
 
 fn main() {
-    let contents = read_to_string("inputs/day02")
+    let contents = read_to_string("inputs/advent2022/day02")
         .expect("Should have been able to read the file");
 
     let shape_points = enum_map! {
