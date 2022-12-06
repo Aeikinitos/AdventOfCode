@@ -30,3 +30,7 @@ path = "src/main/rust/advent2022/day04.rs"
 [[bin]]
 name = "2022-day05"
 path = "src/main/rust/advent2022/day05.rs"
+
+[[bin]]
+name = "2022-day06"
+path = "src/main/rust/advent2022/day06.rs"
