@@ -11,7 +11,7 @@ struct File {
     size: usize,
     name: String,
     is_dir: bool,
-    children: HashMap<String, File>
+    children: Vec<File>
 }
 
 impl File{
@@ -20,7 +20,7 @@ impl File{
             size: 0,
             name,
             is_dir: true,
-            children: HashMap::new(),
+            children: vec![],
         }
     }
 
@@ -29,21 +29,21 @@ impl File{
             size,
             name,
             is_dir: false,
-            children: HashMap::new(),
+            children: vec![],
         }
     }
 
     fn add_file(&mut self, file: File) {
-        self.children.insert(file.name.clone(), file);
+        self.children.push(file);
     }
 
     fn add_files(&mut self, files: Vec<File>) {
-        files.into_iter().for_each(|file| self.add_file(file))
+        self.children.extend(files);
     }
 
     fn get_size(&self) -> usize {
         if self.is_dir {
-            self.children.iter().map(|(_,file)| file.get_size()).sum()
+            self.children.iter().map(|file| file.get_size()).sum()
         }  else {
             self.size
         }
@@ -51,9 +51,16 @@ impl File{
 
     fn get_dirs(&self) -> Vec<&File> {
         let mut dirs = vec![];
-        self.children.iter().for_each(|(_,file)| if file.is_dir {dirs.push(file);dirs.extend(file.get_dirs())});
+        self.children.iter().filter(is_dir).for_each(|file| {
+            dirs.push(file);
+            dirs.extend(file.get_dirs())
+        });
         dirs
     }
+}
+
+fn is_dir(file: &&File) -> bool {
+    file.is_dir
 }
 
 fn main() {
@@ -69,22 +76,7 @@ fn main() {
     println!("Part 2 {}", root.get_dirs().iter().filter(|dir| dir.get_size() >= needed_remaining).map(|file| file.get_size()).sorted().collect::<Vec<_>>()[0]);
 
 }
-/*
-- / (dir)
-  - a (dir)
-    - e (dir)
-      - i (file, size=584)
-    - f (file, size=29116)
-    - g (file, size=2557)
-    - h.lst (file, size=62596)
-  - b.txt (file, size=14848514)
-  - c.dat (file, size=8504156)
-  - d (dir)
-    - j (file, size=4060174)
-    - d.log (file, size=8033020)
-    - d.ext (file, size=5626152)
-    - k (file, size=7214296)
- */
+
 fn process_dir(lines: &mut Vec<&str>) -> Vec<File> {
     let mut listing = vec![];
     while let Some(line) = lines.pop() {
