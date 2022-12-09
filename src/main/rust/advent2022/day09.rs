@@ -1,5 +1,6 @@
 use std::collections::HashSet;
 use std::fs::read_to_string;
+use itertools::Itertools;
 
 macro_rules! loopn {
   ($n:expr, $body:block) => {
@@ -9,6 +10,7 @@ macro_rules! loopn {
   }
 }
 
+#[derive(Copy, Clone)]
 struct Position {
     x: i32,
     y: i32
@@ -17,35 +19,28 @@ fn main() {
     let contents = read_to_string("inputs/advent2022/day09")
         .expect("Should have been able to read the file");
 
-    let mut tail_positions = HashSet::new();
-    // let mut tail_positions_vec = Vec::new();
+    let mut part1_tail_positions = HashSet::new();
+    let mut part2_tail_positions = HashSet::new();
+
     let mut head = Position{x:0,y:0};
-    let mut tail = Position{x:0,y:0};
+    let mut tails = vec![Position{x:0,y:0}; 9];
 
-    tail_positions.insert((tail.x, tail.y));
+    part1_tail_positions.insert((0, 0)); // insert initial position
+    part2_tail_positions.insert((0, 0)); // insert initial position
 
-    let mut lines = contents.lines().rev().collect::<Vec<_>>();
-    while let Some(line) = lines.pop() {
-        match line.split(' ').collect::<Vec<_>>()[..] {
-            [dir, count_str] => {
-                let count = count_str.parse().expect("count was not a digit");
-                loopn!(count, {
+    for line in contents.lines(){
+        let (dir, count_str) = line.split(' ').collect_tuple().expect("klatsa");
+        let count = count_str.parse().expect("count was not a digit");
+        loopn!(count, {
                     move_head(&mut head, dir);
-                    check_and_move_tail(&mut tail, &head);
-                    tail_positions.insert((tail.x,tail.y));
-                    // tail_positions_vec.push((tail.x,tail.y));
+                    check_and_move_tails(&mut tails, &head);
+                    part1_tail_positions.insert((tails[0].x,tails[0].y));
+                    part2_tail_positions.insert((tails[8].x,tails[8].y));
                 })
-            },
-            // ["L", count] => {println!("L")},
-            // ["U", count] => {println!("U")},
-            // ["D", count] => {println!("D")},
-            [..] => panic!("klatsa")
-        }
     }
 
-
-
-    println!("Part 1: {:?}", tail_positions.len());
+    println!("Part 1: {:?}", part1_tail_positions.len());
+    println!("Part 2: {:?}", part2_tail_positions.len());
 }
 
 fn move_head(head: &mut Position, dir: &str) {
@@ -58,26 +53,44 @@ fn move_head(head: &mut Position, dir: &str) {
     }
 }
 
+fn check_and_move_tails(tails: &mut Vec<Position>, head: &Position) {
+    check_and_move_tail(&mut tails[0], head);
+    for i in 1..=8 {
+        let new_head = &tails[i-1].clone();
+        check_and_move_tail(&mut tails[i], new_head);
+    }
+}
 
 fn check_and_move_tail(tail: &mut Position, head: &Position) {
-    if(is_tail_close_to_head(tail, head)) {
+    if is_tail_close_to_head(tail, head) {
         return;
     }
     match ((tail.x, tail.y),(head.x, head.y)) {
-        ((tail_x, tail_y), (head_x, head_y)) if tail_x == head_x => {tail.y = tail.y + get_tail_row_move_direction(tail, head)}, // same row
-        ((tail_x, tail_y), (head_x, head_y)) if tail_y == head_y => {tail.x = tail.x + get_tail_column_move_direction(tail, head)}, // same column
-        ((tail_x, tail_y), (head_x, head_y)) => {
-            let row_move = get_tail_row_move_direction(tail, head);
-            let column_move = get_tail_column_move_direction(tail, head);
-            tail.x = tail.x + column_move;
-            tail.y = tail.y + row_move;
-        }, // diagonally
+        ((tail_x, _tail_y), (head_x, _head_y)) if tail_x == head_x => { move_vertically(tail, head) }, // same row
+        ((_tail_x, tail_y), (_head_x, head_y)) if tail_y == head_y => { move_horizontally(tail, head) }, // same column
+        (_, _) => { move_diagonally(tail, head);}, // diagonally
 
     }
 }
 
+
 fn is_tail_close_to_head(tail: &Position, head: &Position) -> bool {
     (((tail.x-head.x).pow(2) + (tail.y-head.y).pow(2)) as f32).sqrt() <= 1.42 //sqrt of 2
+}
+
+fn move_vertically(tail: &mut Position, head: &Position) {
+    tail.y = tail.y + get_tail_row_move_direction(tail, head)
+}
+
+fn move_horizontally(tail: &mut Position, head: &Position) {
+    tail.x = tail.x + get_tail_column_move_direction(tail, head)
+}
+
+fn move_diagonally(tail: &mut Position, head: &Position) {
+    let row_move = get_tail_row_move_direction(tail, head);
+    let column_move = get_tail_column_move_direction(tail, head);
+    tail.x = tail.x + column_move;
+    tail.y = tail.y + row_move;
 }
 
 fn get_tail_row_move_direction(tail: &Position, head: &Position) -> i32 {
