@@ -2,38 +2,70 @@ use std::collections::VecDeque;
 use std::fs::read_to_string;
 use itertools::Itertools;
 use num_bigint::{BigInt, ToBigInt};
-use num_traits::{Zero, One};
-
 
 const ROUNDS: i32 = 10000;
 
-// #[derive(Copy, Clone)]
 enum Operation {
-    ADD(BigInt),
-    MULTIPLY(BigInt),
+    ADD(i32),
+    MULTIPLY(i32),
     POW_2
 }
 impl Operation {
-    fn operate(&self, old_value: &BigInt) -> BigInt {
+    fn operate(&self, old_value: &Divisible) -> Divisible {
         match self {
-            Operation::ADD(value) => {old_value + value}
-            Operation::MULTIPLY(value) => {old_value * value}
-            Operation::POW_2 => {old_value.pow(2)}
+            Operation::ADD(value) => {
+                Divisible {
+                    by_23: (old_value.by_23 + value) % 23,
+                    by_7: (old_value.by_7 + value) % 7,
+                    by_19: (old_value.by_19 + value) % 19,
+                    by_13: (old_value.by_13 + value) % 13,
+                    by_3: (old_value.by_3 + value) % 3,
+                    by_2: (old_value.by_2 + value) % 2,
+                    by_11: (old_value.by_11 + value) % 11,
+                    by_17: (old_value.by_17 + value) % 17,
+                    by_5: (old_value.by_5 + value) % 5
+                }
+            }
+            Operation::MULTIPLY(value) => {
+                Divisible {
+                    by_23: (old_value.by_23 * value) % 23,
+                    by_7: (old_value.by_7 * value) % 7,
+                    by_19: (old_value.by_19 * value) % 19,
+                    by_13: (old_value.by_13 * value) % 13,
+                    by_3: (old_value.by_3 * value) % 3,
+                    by_2: (old_value.by_2 * value) % 2,
+                    by_11: (old_value.by_11 * value) % 11,
+                    by_17: (old_value.by_17 * value) % 17,
+                    by_5: (old_value.by_5 * value) % 5
+                }
+            }
+            Operation::POW_2 => {
+                Divisible {
+                    by_23: (old_value.by_23.pow(2)) % 23,
+                    by_7: (old_value.by_7.pow(2)) % 7,
+                    by_19: (old_value.by_19.pow(2)) % 19,
+                    by_13: (old_value.by_13.pow(2)) % 13,
+                    by_3: (old_value.by_3.pow(2)) % 3,
+                    by_2: (old_value.by_2.pow(2)) % 2,
+                    by_11: (old_value.by_11.pow(2)) % 11,
+                    by_17: (old_value.by_17.pow(2)) % 17,
+                    by_5: (old_value.by_5.pow(2)) % 5
+                }
+            }
         }
     }
 }
 
 struct Monkey {
-    items: VecDeque<BigInt>,
+    items: VecDeque<Divisible>,
     operation: Operation,
-    test_divider: BigInt,
+    test_divider: i32,
     test_true_target: usize,
     test_false_target: usize
 }
 impl Monkey {
-    fn decide_monkey_target(&self, value: &BigInt) -> usize {
-
-        if  value % &self.test_divider == Zero::zero() {
+    fn decide_monkey_target(&self, value: &Divisible) -> usize {
+        if  value.test(self.test_divider) {
             self.test_true_target
         } else {
             self.test_false_target
@@ -41,15 +73,47 @@ impl Monkey {
     }
 }
 
-macro_rules! impl_to_bigint {
-    ($T:ty, $from_ty:path) => {
-        impl ToBigInt for $T {
-            #[inline]
-            fn to_bigint(&self) -> Option<BigInt> {
-                $from_ty(*self)
-            }
+#[derive(Debug, Clone)]
+struct Divisible {
+    by_23: i32,
+    by_7: i32,
+    by_19: i32,
+    by_13: i32,
+    by_3: i32,
+    by_2: i32,
+    by_11: i32,
+    by_17: i32,
+    by_5: i32
+}
+impl Divisible {
+    fn from_num(num: i32) -> Divisible {
+        Divisible {
+            by_23: num % 23,
+            by_7: num % 7,
+            by_19: num % 19,
+            by_13: num % 13,
+            by_3: num % 3,
+            by_2: num % 2,
+            by_11: num % 11,
+            by_17: num % 17,
+            by_5: num % 5,
         }
-    };
+    }
+
+    fn test(&self, test: i32) -> bool {
+        match test {
+            23 => self.by_23 == 0,
+            7 => self.by_7 == 0,
+            19 => self.by_19 == 0,
+            13 => self.by_13 == 0,
+            3 => self.by_3 == 0,
+            2 => self.by_2 == 0,
+            11 => self.by_11 == 0,
+            17 => self.by_17 == 0,
+            5 => self.by_5 == 0,
+            _ => panic!("klatsa")
+        }
+    }
 }
 
 fn main() {
@@ -64,25 +128,18 @@ fn main() {
             while let Some(item) = monkeys[i].items.pop_front() {
                 monkey_inspections[i] += 1;
                 // operate and relief
-
                 // let new_value = ((monkeys[i].operation.operate(&item) / 3 ) as f32).floor();
                 let new_value = monkeys[i].operation.operate(&item);
                 let target_monkey = monkeys[i].decide_monkey_target(&new_value);
                 // test and throw
                 monkeys[target_monkey].items.push_back(new_value);
 
-                // println!("{round}: Monkey:{i} inspects {item} and decides to throw {new_value} at {} ", target_monkey);
+
             }
-        }
-        if round % 100 == 0 {
-            println!("{round}: {:?}", monkey_inspections.iter().collect::<Vec<_>>());
         }
 
     }
 
-    for i in 0..monkeys.len() {
-        println!("{} - {:?}", monkey_inspections[i], monkeys[i].items);
-    };
 
     println!("Part1 {}", monkey_inspections.iter().sorted().rev().take(2).product::<BigInt>());
 
@@ -106,16 +163,16 @@ fn parse_data(input: String) -> Vec<Monkey> {
     monkeys
 }
 
-fn parse_monkey_items(line: &str) -> VecDeque<BigInt>{
+fn parse_monkey_items(line: &str) -> VecDeque<Divisible>{
     line
         .split(&[' ',','][..])
         .filter(is_numeric)
-        .map(|item| item.parse::<BigInt>().expect("starting item should have been a number"))
+        .map(|item| Divisible::from_num(item.parse::<i32>().expect("starting item should have been a number")))
         .collect::<VecDeque<_>>()
 }
 
 fn is_numeric(input: &&str) -> bool {
-    input.parse::<BigInt>().is_ok()
+    input.parse::<i32>().is_ok()
 }
 
 fn parse_operation(line: &str) -> Operation {
@@ -132,8 +189,8 @@ fn parse_operation(line: &str) -> Operation {
     }
 }
 
-fn parse_test(line: &str) -> BigInt {
-    line.split(' ').collect::<Vec<_>>()[5].parse::<BigInt>().expect("test value should have been a number")
+fn parse_test(line: &str) -> i32 {
+    line.split(' ').collect::<Vec<_>>()[5].parse::<i32>().expect("test value should have been a number")
 }
 
 fn parse_test_true(line: &str) -> usize {
