@@ -17,6 +17,7 @@ substring = "1.4.5"
 num-bigint = "0.4.3"
 num-traits = "0.2.15"
 queues = "1.0.2"
+pathfinding = "0.1.8"
 
 [[bin]]
 name = "2022-day02"
@@ -57,3 +58,7 @@ path = "src/main/rust/advent2022/day10.rs"
 [[bin]]
 name = "2022-day11"
 path = "src/main/rust/advent2022/day11.rs"
+
+[[bin]]
+name = "2022-day12"
+path = "src/main/rust/advent2022/day12.rs"
