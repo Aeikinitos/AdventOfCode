@@ -1,3 +1,5 @@
+#![feature(is_some_with)]
+
 [package]
 name = "AOC22"
 version = "0.1.0"
@@ -18,6 +20,8 @@ num-bigint = "0.4.3"
 num-traits = "0.2.15"
 queues = "1.0.2"
 pathfinding = "0.1.8"
+pest = "2.5.1"
+pest_derive = "2.5.1"
 
 [[bin]]
 name = "2022-day02"
@@ -62,3 +66,7 @@ path = "src/main/rust/advent2022/day11.rs"
 [[bin]]
 name = "2022-day12"
 path = "src/main/rust/advent2022/day12.rs"
+
+[[bin]]
+name = "2022-day13"
+path = "src/main/rust/advent2022/day13.rs"

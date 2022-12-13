@@ -1,0 +1,15 @@
+file = {
+    SOI ~
+    (packet? ~ NEWLINE )*
+}
+
+packet = { list }
+
+list = { (emptylist | "[" ~ value ~ ("," ~ value)* ~ "]") }
+
+emptylist = { "[]" }
+
+value = { (number|list) }
+
+number = { ASCII_DIGIT+ }
+
