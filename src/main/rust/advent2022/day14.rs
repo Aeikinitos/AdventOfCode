@@ -1,4 +1,5 @@
 use std::cmp::{max, min};
+use std::collections::HashSet;
 use std::fs::read_to_string;
 use itertools::Itertools;
 
@@ -17,14 +18,13 @@ fn main() {
 
     let sand_drops = sand_drops + drop_sand_until_stable(&mut blocked_coords, lowest_rock_formation+1, Some(lowest_rock_formation +2));
     println!("Part 2: {:?}", sand_drops);
-
 }
 
-fn get_lowest_rock_formation(blocked_coords: &mut Vec<(i32, i32)>) -> i32 {
+fn get_lowest_rock_formation(blocked_coords: &mut HashSet<(i32, i32)>) -> i32 {
     *blocked_coords.iter().map(|(_, y)| y).max().expect("Should have a lowest point")
 }
 
-fn drop_sand_until_stable(blocked_coords: &mut Vec<(i32, i32)>, void: i32, floor_y: Option<i32>) -> i32 {
+fn drop_sand_until_stable(blocked_coords: &mut HashSet<(i32, i32)>, void: i32, floor_y: Option<i32>) -> i32 {
     let mut sand_drops = 0;
     loop {
         let mut sand = DROP_SAND;
@@ -36,7 +36,7 @@ fn drop_sand_until_stable(blocked_coords: &mut Vec<(i32, i32)>, void: i32, floor
             }
         }
         sand_drops += 1;
-        blocked_coords.push(sand);
+        blocked_coords.insert(sand);
 
         if sand == DROP_SAND {
             return sand_drops;
@@ -48,16 +48,12 @@ fn into_the_void(void: i32, floor_y: Option<i32>, sand: &mut (i32, i32)) -> bool
     floor_y.is_none() && sand.1 == void
 }
 
-fn get_rock_points(contents: String) -> Vec<(i32, i32)> {
-    let mut blocked_coords = vec![];
+fn get_rock_points(contents: String) -> HashSet<(i32, i32)> {
+    let mut blocked_coords = HashSet::new();
     contents.lines().for_each(|line| {
         let coords = line
             .split("->")
-            .map(|coord|
-                coord.trim()
-                    .split(',')
-                    .map(|x| x.parse::<i32>().expect("coord should have been a number"))
-                    .collect_tuple::<(i32, i32)>().expect("Coords should have been in pairs"))
+            .map(coord_str_to_tuple())
             .collect::<Vec<_>>();
 
         for i in 0..coords.len() - 1 {
@@ -67,7 +63,15 @@ fn get_rock_points(contents: String) -> Vec<(i32, i32)> {
     blocked_coords
 }
 
-fn can_move(sand: (i32, i32), blocked_coords: &Vec<(i32, i32)>, floor_y: Option<i32>) -> Option<(i32,i32)> {
+fn coord_str_to_tuple() -> fn(&str) -> (i32, i32) {
+    |coord|
+        coord.trim()
+            .split(',')
+            .map(|x| x.parse::<i32>().expect("coord should have been a number"))
+            .collect_tuple::<(i32, i32)>().expect("Coords should have been in pairs")
+}
+
+fn can_move(sand: (i32, i32), blocked_coords: &HashSet<(i32, i32)>, floor_y: Option<i32>) -> Option<(i32,i32)> {
     if !blocked_coords.contains(&(sand.0, sand.1 +1)) && is_not_on_floor(sand, floor_y) {
         return Some((sand.0, sand.1 +1));
     } else if !blocked_coords.contains(&(sand.0-1, sand.1 +1)) && is_not_on_floor(sand, floor_y) {
