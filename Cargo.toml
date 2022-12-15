@@ -22,6 +22,7 @@ queues = "1.0.2"
 pathfinding = "0.1.8"
 pest = "2.5.1"
 pest_derive = "2.5.1"
+ranges = "0.3.3"
 
 [[bin]]
 name = "2022-day02"
@@ -74,3 +75,7 @@ path = "src/main/rust/advent2022/day13.rs"
 [[bin]]
 name = "2022-day14"
 path = "src/main/rust/advent2022/day14.rs"
+
+[[bin]]
+name = "2022-day15"
+path = "src/main/rust/advent2022/day15.rs"

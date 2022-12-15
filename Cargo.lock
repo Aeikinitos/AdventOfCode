@@ -15,6 +15,7 @@ dependencies = [
  "pest",
  "pest_derive",
  "queues",
+ "ranges",
  "regex",
  "strum",
  "strum_macros",
@@ -310,6 +311,12 @@ checksum = "bbe448f377a7d6961e30f5955f9b8d106c3f5e449d493ee1b125c1d43c2b5179"
 dependencies = [
  "proc-macro2",
 ]
+
+[[package]]
+name = "ranges"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f781d391cd4838df77e09fd26e33a87e0ac9bf2edf6ff770cfc65f83d50e3948"
 
 [[package]]
 name = "rawpointer"
