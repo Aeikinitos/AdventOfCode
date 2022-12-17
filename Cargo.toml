@@ -81,5 +81,5 @@ name = "2022-day15"
 path = "src/main/rust/advent2022/day15.rs"
 
 [[bin]]
-name = "2022-day17"
+name = "2022-day17-patter"
 path = "src/main/rust/advent2022/day17.rs"

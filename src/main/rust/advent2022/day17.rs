@@ -1,6 +1,6 @@
 use std::fs::read_to_string;
 
-const ROCK_DROP: i64 = 1000000000000;
+const ROCK_DROP: i64 = 2755;
 // const ROCK_DROP: i64 = 2022;
 const SPAWN_POINT: Point = Point {x:3, y:4};
 
@@ -43,14 +43,6 @@ impl TetrisGrid {
         self.blocked_left.extend(&resting_rock.get_right_side_faces_at_location());
         self.blocked_right.extend(&resting_rock.get_left_side_faces_at_location());
         self.blocked_top.extend(&resting_rock.get_top_side_faces_at_location());
-
-        // Attempt at part 2 by reducing the size of face that are probably not needed anymore
-        if self.blocked_top.len() > 20 {
-            // self.blocked_left.remove(self.blocked_left.len()-1);
-            self.blocked_top.remove(0);
-            self.blocked_left.remove(5);
-            self.blocked_right.remove(5);
-        }
     }
     fn update_spawn_point(&mut self, resting_rock: &Rock) {
         if self.spawn_point.y < resting_rock.height +resting_rock.location.y+SPAWN_POINT.y {
@@ -265,7 +257,7 @@ fn main() {
     let contents = read_to_string("inputs/advent2022/day17")
         .expect("Should have been able to read the file");
 
-    let contents = ">>><<><>><<<>><>>><<<>>><<<><<<>><>><<>>".to_string();
+    // let contents = ">>><<><>><<<>><>>><<<>>><<<><<<>><>><<>>".to_string();
 
     // max height = rocks * max_height_rock
     let max_height = ROCK_DROP * 4;
@@ -280,11 +272,25 @@ fn main() {
     };
 
     let mut drop = ROCK_DROP;
+    let mut last = 0;
     while drop > 0 {
         drop -= 1;
-        println!("{drop}");
+
         // spawn a rock
         let mut rock = spawner.spawn(tetris.spawn_point);
+        if (ROCK_DROP-drop) % 5 == 0 {
+            // Part 2:
+            // get the height delta for every full rotation of the shapes
+            // at the 326 rotation (326*5=1630 shapes) a pattern emerges that repeats every 349 rotations
+            // each pattern consumes 349*5=1745 shapes and provides 2752 delta height
+            // 1000000000000 % 1745 = 1125 remaining shapes
+            // (1000000000000 - (1125+1630)) /1745 * 2752 = gained height
+            // plus (1125+1630) shapes = 4363
+            // total = 1577077363915
+            println!("{}",tetris.spawn_point.y-SPAWN_POINT.y - last);
+            last = tetris.spawn_point.y-SPAWN_POINT.y;
+
+        }
         let mut resting = false;
         // while not resting
         while !resting {
