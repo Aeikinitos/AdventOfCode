@@ -23,6 +23,7 @@ pathfinding = "0.1.8"
 pest = "2.5.1"
 pest_derive = "2.5.1"
 ranges = "0.3.3"
+derive-new = "0.5"
 
 [[bin]]
 name = "2022-day02"
@@ -87,3 +88,7 @@ path = "src/main/rust/advent2022/day17.rs"
 [[bin]]
 name = "2022-day18"
 path = "src/main/rust/advent2022/day18.rs"
+
+[[bin]]
+name = "2022-day20"
+path = "src/main/rust/advent2022/day20.rs"
