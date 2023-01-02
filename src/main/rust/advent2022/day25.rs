@@ -1,6 +1,5 @@
 use std::fs::read_to_string;
 use std::time::Instant;
-use derive_new::new;
 
 
 fn main() {
