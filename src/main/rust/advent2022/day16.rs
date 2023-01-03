@@ -76,7 +76,7 @@ impl Eq for State {
 
 fn main() {
     let start = Instant::now();
-    let contents = read_to_string("inputs/advent2022/day16")
+    let contents = read_to_string("../../../../inputs/advent2022/day16")
         .expect("Should have been able to read the file");
 
     let mut nodes: HashMap<String, Node> = HashMap::new();

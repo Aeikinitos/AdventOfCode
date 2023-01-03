@@ -60,7 +60,7 @@ enum ORDER {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day13")
+    let contents = read_to_string("../../../../inputs/advent2022/day13")
         .expect("Should have been able to read the file");
 
     let file = Day13Parser::parse(Rule::file, &contents)

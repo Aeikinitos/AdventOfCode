@@ -3,7 +3,7 @@ use itertools::Itertools;
 
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day04")
+    let contents = read_to_string("../../../../inputs/advent2022/day04")
         .expect("Should have been able to read the file");
 
     let overlapping_groups = process(&contents, overlap);

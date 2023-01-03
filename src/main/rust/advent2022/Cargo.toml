@@ -29,96 +29,96 @@ nom = "7.1.1"
 
 [[bin]]
 name = "2022-day02"
-path = "src/main/rust/advent2022/day02.rs"
+path = "day02.rs"
 
 [[bin]]
 name = "2022-day03"
-path = "src/main/rust/advent2022/day03.rs"
+path = "day03.rs"
 
 [[bin]]
 name = "2022-day04"
-path = "src/main/rust/advent2022/day04.rs"
+path = "day04.rs"
 
 [[bin]]
 name = "2022-day05"
-path = "src/main/rust/advent2022/day05.rs"
+path = "day05.rs"
 
 [[bin]]
 name = "2022-day06"
-path = "src/main/rust/advent2022/day06.rs"
+path = "day06.rs"
 
 [[bin]]
 name = "2022-day07"
-path = "src/main/rust/advent2022/day07.rs"
+path = "day07.rs"
 
 [[bin]]
 name = "2022-day08"
-path = "src/main/rust/advent2022/day08.rs"
+path = "day08.rs"
 
 [[bin]]
 name = "2022-day09"
-path = "src/main/rust/advent2022/day09.rs"
+path = "day09.rs"
 
 [[bin]]
 name = "2022-day10"
-path = "src/main/rust/advent2022/day10.rs"
+path = "day10.rs"
 
 [[bin]]
 name = "2022-day11"
-path = "src/main/rust/advent2022/day11.rs"
+path = "day11.rs"
 
 [[bin]]
 name = "2022-day12"
-path = "src/main/rust/advent2022/day12.rs"
+path = "day12.rs"
 
 [[bin]]
 name = "2022-day13"
-path = "src/main/rust/advent2022/day13.rs"
+path = "day13.rs"
 
 [[bin]]
 name = "2022-day14"
-path = "src/main/rust/advent2022/day14.rs"
+path = "day14.rs"
 
 [[bin]]
 name = "2022-day15"
-path = "src/main/rust/advent2022/day15.rs"
+path = "day15.rs"
 
 [[bin]]
 name = "2022-day16"
-path = "src/main/rust/advent2022/day16.rs"
+path = "day16.rs"
 
 [[bin]]
 name = "2022-day17"
-path = "src/main/rust/advent2022/day17.rs"
+path = "day17.rs"
 
 [[bin]]
 name = "2022-day18"
-path = "src/main/rust/advent2022/day18.rs"
+path = "day18.rs"
 
 [[bin]]
 name = "2022-day19"
-path = "src/main/rust/advent2022/day19.rs"
+path = "day19.rs"
 
 [[bin]]
 name = "2022-day20"
-path = "src/main/rust/advent2022/day20.rs"
+path = "day20.rs"
 
 [[bin]]
 name = "2022-day21"
-path = "src/main/rust/advent2022/day21.rs"
+path = "day21.rs"
 
 [[bin]]
 name = "2022-day22"
-path = "src/main/rust/advent2022/day22.rs"
+path = "day22.rs"
 
 [[bin]]
 name = "2022-day23"
-path = "src/main/rust/advent2022/day23.rs"
+path = "day23.rs"
 
 [[bin]]
 name = "2022-day24"
-path = "src/main/rust/advent2022/day24.rs"
+path = "day24.rs"
 
 [[bin]]
 name = "2022-day25"
-path = "src/main/rust/advent2022/day25.rs"
+path = "day25.rs"

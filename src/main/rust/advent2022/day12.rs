@@ -27,7 +27,7 @@ fn in_bounds(x: i32, y:i32, map_len_x: i32, map_len_y: i32) -> bool {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day12")
+    let contents = read_to_string("../../../../inputs/advent2022/day12")
         .expect("Should have been able to read the file");
 
     let map = parse_map(&contents);

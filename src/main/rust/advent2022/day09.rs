@@ -16,7 +16,7 @@ struct Position {
     y: i32
 }
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day09")
+    let contents = read_to_string("../../../../inputs/advent2022/day09")
         .expect("Should have been able to read the file");
 
     let mut part1_tail_positions = HashSet::new();

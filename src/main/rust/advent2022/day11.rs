@@ -38,7 +38,7 @@ impl Monkey {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day11")
+    let contents = read_to_string("../../../../inputs/advent2022/day11")
         .expect("Should have been able to read the file");
 
     let mut monkeys = parse_data(contents);

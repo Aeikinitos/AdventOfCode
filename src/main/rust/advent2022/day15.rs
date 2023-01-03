@@ -81,7 +81,7 @@ impl Grid {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day15")
+    let contents = read_to_string("../../../../inputs/advent2022/day15")
         .expect("Should have been able to read the file");
 
     let mut grid = Grid {

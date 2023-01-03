@@ -55,7 +55,7 @@ impl CRT {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day10")
+    let contents = read_to_string("../../../../inputs/advent2022/day10")
         .expect("Should have been able to read the file");
 
     let mut cpu = CPU {

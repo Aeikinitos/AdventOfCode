@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day08")
+    let contents = read_to_string("../../../../inputs/advent2022/day08")
         .expect("Should have been able to read the file");
 
     let grid_size = contents.lines().count();

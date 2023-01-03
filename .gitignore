@@ -1,3 +1,4 @@
 /target
 .idea
 /AOC22.iml
+src/main/rust/advent2022/target

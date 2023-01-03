@@ -33,7 +33,7 @@ impl Point3D {
 }
 
 fn main() {
-    let contents = read_to_string("inputs/advent2022/day18")
+    let contents = read_to_string("../../../../inputs/advent2022/day18")
         .expect("Should have been able to read the file");
 
     let droplets = contents.lines().map(|line| Point3D::from_str(line)).collect::<Vec<_>>();
