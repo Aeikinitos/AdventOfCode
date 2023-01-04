@@ -1,5 +1,5 @@
-use std::collections::HashSet;
 use std::fs::read_to_string;
+use std::time::Instant;
 use regex::Regex;
 use derive_new::new;
 
@@ -83,19 +83,11 @@ impl Factory {
     }
 
     fn next_states(&self) -> Vec<Factory> {
-        let mut next_states = vec![Robot::ORE, Robot::CLAY, Robot::OBSIDIAN, Robot::GEODE]
+        vec![Robot::ORE, Robot::CLAY, Robot::OBSIDIAN, Robot::GEODE]
             .iter()
             .map(|robot| self.get_next_state_for(*robot))
-            .filter(|next_state| next_state.is_some())
-            .map(|next_state| next_state.unwrap())
-            .collect::<Vec<_>>();
-
-        let mut new_state = self.clone();
-        new_state.generate_resources();
-        new_state.cycle += 1;
-        next_states.push(new_state);
-
-        next_states
+            .flatten()
+            .collect::<Vec<_>>()
     }
 
     fn pay_resources(&mut self, target_robot: &Demand) {
@@ -112,25 +104,46 @@ impl Factory {
     }
 
     fn get_next_state_for(&self, target_robot: Robot) -> Option<Factory> {
-        if !self.can_robot_be_made_and_below_max(target_robot) {
+        // if this robot needs resources that cannot be made with this setup or should not be making more of this robot
+        if !self.can_robot_be_ever_made(target_robot) || !self.robot_below_max(target_robot) {
             return None;
         }
         let mut new_state = self.clone();
-        new_state.cycle += 1;
-        new_state.pay_resources(&self.blueprint.get_demand_for(target_robot));
-        new_state.generate_resources();
-        new_state.create_robot(target_robot);
-        Some(new_state)
+        loop {
+            new_state.cycle += 1;
+            // loop until you can make this robot
+            if !new_state.can_robot_be_made_and_below_max(target_robot) {
+                new_state.generate_resources();
+                continue;
+            }
+            new_state.pay_resources(&self.blueprint.get_demand_for(target_robot));
+            new_state.generate_resources();
+            new_state.create_robot(target_robot);
+            return Some(new_state.clone());
+        }
+    }
+
+    fn can_robot_be_ever_made(&self, target_robot: Robot) -> bool {
+        match target_robot {
+            Robot::ORE => true,
+            Robot::CLAY => true,
+            Robot::OBSIDIAN => self.robots.clay > 0,
+            Robot::GEODE =>  self.robots.obsidian > 0,
+        }
+    }
+
+    fn robot_below_max(&self, target_robot: Robot) -> bool {
+        return match target_robot {
+            Robot::ORE => self.robots.ore < self.blueprint.clay.ore.max(self.blueprint.obsidian.ore).max(self.blueprint.geode.ore),
+            Robot::CLAY => self.robots.clay < self.blueprint.obsidian.clay,
+            Robot::OBSIDIAN => self.robots.obsidian <self. blueprint.geode.obsidian,
+            Robot::GEODE =>  true,
+        }
     }
 
     fn can_robot_be_made_and_below_max(&self, target_robot: Robot) -> bool {
         return self.blueprint.can_make(target_robot, &self.resources)
-            && match target_robot {
-                Robot::ORE => self.robots.ore < self.blueprint.clay.ore.max(self.blueprint.obsidian.ore).max(self.blueprint.geode.ore),
-                Robot::CLAY => self.robots.clay < self.blueprint.obsidian.clay,
-                Robot::OBSIDIAN => self.robots.obsidian <self. blueprint.geode.obsidian,
-                Robot::GEODE =>  true,
-        }
+            && self.robot_below_max(target_robot)
     }
 
     fn create_robot(&mut self, robot: Robot) {
@@ -179,6 +192,7 @@ impl Blueprint {
 
 }
 fn main() {
+    let start = Instant::now();
     let contents = read_to_string("../../../../inputs/advent2022/day19")
         .expect("Should have been able to read the file");
 
@@ -196,30 +210,27 @@ fn main() {
         .map(|blueprint| dfs(blueprint, 32) as usize)
         .product::<usize>();
 
-    println!("Part 2 {}", part2);
+    println!("Part 2 {}, elapsed {:?}", part2, start.elapsed());
 }
 
 fn dfs(blueprint: Blueprint, rounds: i32) -> i32 {
-    let factory = Factory::new(blueprint);
 
-    let mut seen = HashSet::new();
-    let mut to_visit = vec![factory];
+    let mut to_visit = vec![Factory::new(blueprint)];
     let mut actual = 0;
 
     while let Some(state) = to_visit.pop() {
-        if state.resources.geode > actual {
-            // if we have a better geode accumulation, then update the best actual state
-            actual = state.resources.geode;
+        if state.cycle > rounds {
+            continue;
         }
+        actual = state.resources.geode.max(actual);
+
         let state_estimate = state.heuristic(rounds - state.cycle);
         if state_estimate <= actual {
             // if the state to check is in the best case scenario worse than the actual we have, then drop it
             continue;
         }
-        let mut next_states = state.next_states();
-        next_states.retain(|state| !seen.contains(state) && state.cycle <= rounds);
-        seen.extend(next_states.clone());
-        to_visit.extend(next_states.clone());
+
+        to_visit.extend(state.next_states());
     }
 
     actual
