@@ -159,6 +159,8 @@ impl Factory {
         // how many geodes can I make?
         // the result needs to always be higher than the actual since we want maximize
         // so make any assumptions that will make the calculation easier
+        let mut clay_robot = self.robots.clay;
+        let mut clay = self.resources.clay;
         let mut obs_robot = self.robots.obsidian;
         let mut obsidian = self.resources.obsidian;
         let mut geode_robot = self.robots.geode;
@@ -170,10 +172,16 @@ impl Factory {
                 geodes += geode_robot;
                 obsidian -= self.blueprint.geode.obsidian;
                 geode_robot += 1;
+                clay += clay_robot;
             } else {
                 obsidian += obs_robot;
-                obs_robot += 1; // make obsidian as if free
                 geodes += geode_robot;
+                if self.blueprint.obsidian.clay <= clay {
+                    obs_robot += 1;
+                } else {
+                    clay_robot += 1;
+                }
+                clay += clay_robot;
             }
         }
         geodes
@@ -218,6 +226,7 @@ fn dfs(blueprint: Blueprint, rounds: i32) -> i32 {
     let mut to_visit = vec![Factory::new(blueprint)];
     let mut actual = 0;
 
+    let mut states_count = 0;
     while let Some(state) = to_visit.pop() {
         if state.cycle > rounds {
             continue;
@@ -229,10 +238,11 @@ fn dfs(blueprint: Blueprint, rounds: i32) -> i32 {
             // if the state to check is in the best case scenario worse than the actual we have, then drop it
             continue;
         }
-
+        states_count += 1;
         to_visit.extend(state.next_states());
     }
 
+    println!("states_count: {states_count}");
     actual
 }
 
