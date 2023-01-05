@@ -4,7 +4,7 @@ use std::time::Instant;
 
 fn main() {
     let start = Instant::now();
-    let contents = read_to_string("../../../../inputs/advent2022/day25")
+    let contents = read_to_string("inputs/day25")
         .expect("Should have been able to read the file");
 
     println!("Part 1 {} : time elapsed {:?}", encode_snafu(decode_snafu(contents)) , start.elapsed());

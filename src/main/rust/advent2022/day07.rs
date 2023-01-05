@@ -64,7 +64,7 @@ fn is_dir(file: &&File) -> bool {
 }
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day07")
+    let contents = read_to_string("inputs/day07")
         .expect("Should have been able to read the file");
     let mut lines = contents.lines().collect::<Vec<_>>();
     lines.reverse();

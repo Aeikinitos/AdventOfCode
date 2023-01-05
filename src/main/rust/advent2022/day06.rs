@@ -5,7 +5,7 @@ static MARKER_SIZE: usize = 4;
 static PACKET_SIZE: usize = 14;
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day06")
+    let contents = read_to_string("inputs/day06")
         .expect("Should have been able to read the file");
 
     let characters: Vec<char> = contents.chars().collect();

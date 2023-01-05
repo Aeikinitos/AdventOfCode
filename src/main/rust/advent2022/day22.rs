@@ -205,7 +205,7 @@ enum Tile {
 
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day22")
+    let contents = read_to_string("inputs/day22")
         .expect("Should have been able to read the file");
 
     let (map_lines, instructions) = contents.split("\r\n\r\n").collect_tuple::<(&str, &str)>().unwrap();

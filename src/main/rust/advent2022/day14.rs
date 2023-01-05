@@ -6,7 +6,7 @@ use itertools::Itertools;
 const DROP_SAND:(i32, i32) = (500,0);
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day14")
+    let contents = read_to_string("inputs/day14")
         .expect("Should have been able to read the file");
 
     let mut blocked_coords = get_rock_points(contents);

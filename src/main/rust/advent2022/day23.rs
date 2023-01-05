@@ -156,7 +156,7 @@ impl Elf {
 
 fn main() {
     let start = Instant::now();
-    let contents = read_to_string("../../../../inputs/advent2022/day23")
+    let contents = read_to_string("inputs/day23")
         .expect("Should have been able to read the file");
 
     let mut orchestrator = Orchestrator {

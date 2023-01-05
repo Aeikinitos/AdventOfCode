@@ -254,7 +254,7 @@ impl Mover {
 }
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day17")
+    let contents = read_to_string("inputs/day17")
         .expect("Should have been able to read the file");
 
     // let contents = ">>><<><>><<<>><>>><<<>>><<<><<<>><>><<>>".to_string();

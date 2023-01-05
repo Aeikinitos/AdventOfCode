@@ -6,7 +6,7 @@ use substring::Substring;
 const STACKS_NUM: usize = 9;
 
 fn main() {
-    let contents = read_to_string("../../../../inputs/advent2022/day05")
+    let contents = read_to_string("inputs/day05")
         .expect("Should have been able to read the file");
 
     let (stack_input, move_instructions): (&str, &str) = contents.split("\n\n").collect_tuple().unwrap();

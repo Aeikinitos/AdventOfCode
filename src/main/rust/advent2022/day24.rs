@@ -16,10 +16,10 @@ use pathfinding::astar;
 //V
 const MAX_ALLOWED_X: i32 = 25; // real
 const MAX_ALLOWED_Y: i32 = 120; // real
-static INPUT: &str = "../../../../inputs/advent2022/day24"; // test
+static INPUT: &str = "inputs/day24"; // test
 // const MAX_ALLOWED_X: i32 = 4; // test
 // const MAX_ALLOWED_Y: i32 = 6; // test
-// static INPUT: &str = "../../../../inputs/advent2022/day24_test"; // test
+// static INPUT: &str = "inputs/day24_test"; // test
 
 #[derive(new, Debug, Copy, Clone, Eq, PartialEq, Hash)]
 struct Point(i32, i32);
