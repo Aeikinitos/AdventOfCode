@@ -2,6 +2,12 @@ use std::fs::read_to_string;
 use std::time::Instant;
 use regex::Regex;
 use derive_new::new;
+use nom::bytes::complete::tag;
+use nom::character::complete::line_ending;
+use nom::IResult;
+use nom::multi::separated_list1;
+use nom::character::complete::i32;
+use nom::sequence::{delimited, tuple};
 
 #[derive(Clone, Eq, PartialEq, Hash)]
 struct Factory {
@@ -204,17 +210,15 @@ fn main() {
     let contents = read_to_string("inputs/day19")
         .expect("Should have been able to read the file");
 
-    let quality_level = contents.lines()
-        .map(|line| parse_blueprint_line(line))
+    let quality_level = parse(contents.as_str())
         .enumerate()
         .map(|(i, blueprint)| (i+1) * dfs(blueprint, 24) as usize)
         .sum::<usize>();
 
     println!("Part 1 {}", quality_level);
 
-    let part2 = contents.lines()
+    let part2 = parse(contents.as_str())
         .take(3)
-        .map(|line| parse_blueprint_line(line))
         .map(|blueprint| dfs(blueprint, 32) as usize)
         .product::<usize>();
 
@@ -226,7 +230,6 @@ fn dfs(blueprint: Blueprint, rounds: i32) -> i32 {
     let mut to_visit = vec![Factory::new(blueprint)];
     let mut actual = 0;
 
-    let mut states_count = 0;
     while let Some(state) = to_visit.pop() {
         if state.cycle > rounds {
             continue;
@@ -238,14 +241,13 @@ fn dfs(blueprint: Blueprint, rounds: i32) -> i32 {
             // if the state to check is in the best case scenario worse than the actual we have, then drop it
             continue;
         }
-        states_count += 1;
         to_visit.extend(state.next_states());
     }
 
-    println!("states_count: {states_count}");
     actual
 }
 
+#[allow(dead_code)] // this parser makes the run in 30-40ms while the nom parser counterpart takes 4-6ms
 fn parse_blueprint_line(line: &str) -> Blueprint{
     // Blueprint 30: Each ore robot costs 2 ore. Each clay robot costs 4 ore. Each obsidian robot costs 3 ore and 20 clay. Each geode robot costs 2 ore and 17 obsidian.
 
@@ -265,4 +267,25 @@ fn parse_blueprint_line(line: &str) -> Blueprint{
         obsidian,
         geode,
     }
+}
+
+// Blueprint 30: Each ore robot costs 2 ore. Each clay robot costs 4 ore. Each obsidian robot costs 3 ore and 20 clay. Each geode robot costs 2 ore and 17 obsidian.
+fn parse(input: &str) -> impl Iterator<Item = Blueprint> {
+    separated_list1(line_ending, blueprint_parser) (input).unwrap().1.into_iter()
+}
+
+fn blueprint_parser(input: &str) -> IResult<&str, Blueprint> {
+    let (input, id) = delimited(tag("Blueprint "), i32, tag(":"))(input)?;
+    let (input, ore_robot_ore_cost) = delimited(tag(" Each ore robot costs "), i32, tag(" ore."))(input)?;
+    let (input, clay_robot_ore_cost) = delimited(tag(" Each clay robot costs "), i32, tag(" ore."))(input)?;
+    let (input, (obsidian_robot_ore_cost,_,obsidian_robot_clay_cost)) = delimited(tag(" Each obsidian robot costs "), tuple((i32, tag(" ore and "), i32)), tag(" clay."))(input)?;
+    let (input, (geode_robot_ore_cost,_,geode_robot_obsidian_cost)) = delimited(tag(" Each geode robot costs "), tuple((i32, tag(" ore and "), i32)), tag(" obsidian."))(input)?;
+
+    Ok((input, Blueprint {
+        id,
+        ore: Demand::new(ore_robot_ore_cost,0,0),
+        clay: Demand::new(clay_robot_ore_cost,0,0),
+        obsidian: Demand::new(obsidian_robot_ore_cost,obsidian_robot_clay_cost,0),
+        geode: Demand::new(geode_robot_ore_cost,0,geode_robot_obsidian_cost),
+    }))
 }
